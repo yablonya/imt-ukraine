@@ -1,4 +1,7 @@
 import Head from "next/head";
+import '@/styles/global-styles.scss';
+import {ThemeProvider} from "@mui/system";
+import theme from "@/styles/theme/theme";
 
 export default function RootLayout({
   children,
@@ -15,7 +18,11 @@ export default function RootLayout({
         rel="stylesheet"
       />
     </Head>
-      <body>{children}</body>
+    <body>
+    <ThemeProvider theme={theme}>
+      {children}
+    </ThemeProvider>
+    </body>
     </html>
   );
 }
