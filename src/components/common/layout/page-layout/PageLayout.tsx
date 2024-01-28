@@ -1,5 +1,8 @@
 import {FC, ReactNode} from "react";
 import Header from "../header/Header";
+import Footer from "../footer/Footer";
+import { Box } from "@mui/material";
+import * as styles from './PageLayout.styles';
 
 interface PageLayoutProps {
   title?: string;
@@ -10,10 +13,13 @@ interface PageLayoutProps {
 
 const PageLayout: FC<PageLayoutProps> = ({children}: PageLayoutProps) => {
   return (
-    <div>
+    <>
       <Header/>
-      {children}
-    </div>
+      <Box sx={styles.pageContent}>
+        {children}
+      </Box>
+      <Footer/>
+    </>
   );
 };
 

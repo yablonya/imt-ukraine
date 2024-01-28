@@ -11,7 +11,7 @@ const typography: TypographyOptions = {
   body1: {
     fontSize: 18,
     fontWeight: 400,
-    lineHeight: 1.5,
+    lineHeight: 1.2,
   },
 }
 
