@@ -28,7 +28,7 @@ export const textContainer: SxProps<Theme> = {
     desktopSemiMedium: 'white',
   },
 }
-export const textBlockHeader: SxProps<Theme> = {
+export const textPartHeader: SxProps<Theme> = {
   mb: '25px',
   typography: {
     desktopSemiMedium: 'h4',
@@ -36,7 +36,7 @@ export const textBlockHeader: SxProps<Theme> = {
   },
 }
 
-export const textBlockContent: SxProps<Theme> = {
+export const textPartContent: SxProps<Theme> = {
   typography: {
     desktopSemiMedium: 'body2',
     desktopMedium: 'body1',

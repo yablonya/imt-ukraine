@@ -4,9 +4,12 @@ import Image from 'next/image';
 import logoSmall from '../../../../../../../public/images/logo-small.png';
 import { UAFlag } from "@/components/common/icons/UAFlag";
 import { mainLinks } from "../../constants";
+import {usePathname} from "next/navigation";
 
 
 const DesktopHeader = () => {
+  const pathName = usePathname();
+
   return (
     <AppBar sx={styles.headerContainer}>
       <Link href={'/'} sx={styles.logoLink}>
@@ -17,7 +20,7 @@ const DesktopHeader = () => {
           <Link
             key={index}
             href={item.link}
-            sx={styles.link}
+            sx={styles.link(pathName.split('/')[1], item.link.split('/')[1])}
           >
             <Typography variant='h5'>{item.label}</Typography>
           </Link>

@@ -20,10 +20,11 @@ export const menu: SxProps<Theme> = {
   gap: '35px',
 };
 
-export const link: SxProps<Theme> = {
+export const link = (currentPage: string, pageLink: string): SxProps<Theme> => ({
   color: 'inherit',
-  textDecoration: 'none'
-};
+  textDecoration: currentPage === pageLink ? 'underline #3D8361' : 'none',
+  textUnderlineOffset: '6px',
+});
 
 export const changeLang: SxProps<Theme> = {
   display: 'flex',

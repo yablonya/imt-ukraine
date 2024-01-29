@@ -21,14 +21,14 @@ const MainPage = () => {
       <Box sx={sxStyles.firstBlock}>
         <Image
           src={mainFirstImg}
-          alt={"Mane page first image"}
+          alt={"Main page first image"}
           className={styles['firstBlockImg']}
         />
         <Box sx={sxStyles.textContainer}>
-          <Typography variant='h3' sx={sxStyles.textBlockHeader}>
+          <Typography variant='h3' sx={sxStyles.textPartHeader}>
             Інвіктус Медичні Технології Україна
           </Typography>
-          <Typography sx={sxStyles.textBlockContent}>
+          <Typography sx={sxStyles.textPartContent}>
             Invictus Medical Technologies Ukraine (IMTU) виготовляє високоякісні функціональні протези рук за допомогою
             технології 3D-друку, розробленої Victoria Hand Project (Канада), для хворих з ампутованими кінцівками та для
             клінічних партнерів. Функціональні протези рук є неймовірним інструментом, який допомагає особам з
