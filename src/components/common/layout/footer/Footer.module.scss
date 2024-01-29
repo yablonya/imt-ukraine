@@ -1,0 +1,16 @@
+.logo {
+  height: 70px;
+  width: auto;
+  @media screen and (min-width: 1024px) {
+    height: 115px;
+  }
+}
+
+.footerLinks {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  &:hover {
+    text-decoration: underline;
+  }
+}

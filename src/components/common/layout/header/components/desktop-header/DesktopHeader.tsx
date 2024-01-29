@@ -2,8 +2,9 @@ import {AppBar, Box, Link, Toolbar, Typography} from "@mui/material";
 import * as styles from './DesktopHeader.styles'
 import Image from 'next/image';
 import logoSmall from '../../../../../../../public/images/logo-small.png';
+import { UAFlag } from "@/components/common/icons/UAFlag";
 import { mainLinks } from "../../constants";
-import { UAFlag } from "../../../../../../../public/icons/UAFlag";
+
 
 const DesktopHeader = () => {
   return (
@@ -18,7 +19,7 @@ const DesktopHeader = () => {
             href={item.link}
             sx={styles.link}
           >
-            <Typography>{item.text}</Typography>
+            <Typography>{item.label}</Typography>
           </Link>
         ))}
       </Toolbar>
