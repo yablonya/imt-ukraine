@@ -19,7 +19,7 @@ const DesktopHeader = () => {
             href={item.link}
             sx={styles.link}
           >
-            <Typography>{item.label}</Typography>
+            <Typography variant='h5'>{item.label}</Typography>
           </Link>
         ))}
       </Toolbar>

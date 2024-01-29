@@ -2,7 +2,7 @@ import {SxProps, Theme} from "@mui/system";
 
 export const headerContainer: SxProps<Theme> = {
   boxShadow: 'none',
-  backgroundColor: 'transparent',
+  backgroundColor: 'white',
   color: 'black',
   borderBottom: '1px solid black',
   padding: '14px 50px',
