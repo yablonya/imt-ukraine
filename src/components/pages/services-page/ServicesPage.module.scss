@@ -1,0 +1,9 @@
+.servicesBlockImg {
+  width: 100%;
+  height: auto;
+
+  @media screen and (min-width: 1200px) {
+    width: 45%;
+    max-height: 700px;
+  }
+}

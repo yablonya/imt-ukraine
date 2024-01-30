@@ -1,0 +1,28 @@
+.firstBlockImg {
+  width: 100%;
+  height: auto;
+
+  @media screen and (min-width: 1200px) {
+    width: 45%;
+    max-height: 700px;
+  }
+}
+
+.mediaImg {
+  width: 100%;
+  height: auto;
+}
+
+.video {
+  height: 42vw;
+  width: 84vw;
+  max-width: 380px;
+  max-height: 190px;
+  border: none;
+  @media screen and (min-width: 1200px) {
+    height: 233px;
+    width: 466px;
+    max-width: none;
+    max-height: none;
+  }
+}

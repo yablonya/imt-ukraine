@@ -9,9 +9,45 @@ export const mulish = Mulish({
 const typography: TypographyOptions = {
   fontFamily: mulish.style.fontFamily,
   body1: {
+    fontSize: 16,
+    fontWeight: 400,
+    lineHeight: 1.5,
+  },
+
+  body2: {
+    fontSize: 14,
+    fontWeight: 400,
+    lineHeight: 1.4,
+  },
+
+  h1: {
+    fontSize: 40,
+    fontWeight: 300,
+    lineHeight: 1.28,
+  },
+
+  h2: {
+    fontSize: 32,
+    fontWeight: 300,
+    lineHeight: 1.28,
+  },
+
+  h3: {
+    fontSize: 28,
+    fontWeight: 400,
+    lineHeight: 1.28,
+  },
+
+  h4: {
+    fontSize: 20,
+    fontWeight: 400,
+    lineHeight: 1.28,
+  },
+
+  h5: {
     fontSize: 18,
     fontWeight: 400,
-    lineHeight: 1.2,
+    lineHeight: 1.28,
   },
 }
 

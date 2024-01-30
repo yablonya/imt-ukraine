@@ -10,6 +10,7 @@ export const headerContainer: SxProps<Theme> = {
   alignItems: 'center',
   justifyContent: 'space-between',
   zIndex: '1201',
+  position: 'fixed',
 };
 
 export const logoLink: SxProps<Theme> = {

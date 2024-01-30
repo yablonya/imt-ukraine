@@ -3,11 +3,11 @@ import {SxProps, Theme} from "@mui/system";
 export const pageContent: SxProps<Theme> = {
   mt: {
     mobile: '70px',
-    desktop: '85px',
+    desktopSemiMedium: '135px',
   },
 
   minHeight: {
     mobile: '600px',
-    desktop: '968px',
+    desktopSemiMedium: '968px',
   },
 };

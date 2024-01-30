@@ -20,8 +20,8 @@ const MobileDrawer: FC<MobileDrawerProps> = ({drawerState, toggleDrawer}) => {
     >
       <Box sx={styles.tabList}>
         {mainLinks.map((item, index) => (
-          <Link key={index} href={item.link}>
-            <Tab startIcon={item.icon} label={item.label}/>
+          <Link key={index} href={item.link} onClick={toggleDrawer}>
+            <Tab startIcon={item.icon} label={item.label} link={item.link}/>
           </Link>
         ))}
       </Box>

@@ -2,7 +2,7 @@ import {SxProps, Theme} from "@mui/system";
 
 export const headerContainer: SxProps<Theme> = {
   boxShadow: 'none',
-  backgroundColor: 'transparent',
+  backgroundColor: 'white',
   color: 'black',
   borderBottom: '1px solid black',
   padding: '14px 50px',
@@ -20,10 +20,11 @@ export const menu: SxProps<Theme> = {
   gap: '35px',
 };
 
-export const link: SxProps<Theme> = {
+export const link = (currentPage: string, pageLink: string): SxProps<Theme> => ({
   color: 'inherit',
-  textDecoration: 'none'
-};
+  textDecoration: currentPage === pageLink ? 'underline #3D8361' : 'none',
+  textUnderlineOffset: '6px',
+});
 
 export const changeLang: SxProps<Theme> = {
   display: 'flex',
