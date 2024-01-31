@@ -1,0 +1,31 @@
+.handSystem {
+  width: 28%;
+  height: auto;
+  max-width: 530px;
+  @media screen and (max-width: 1199px){
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.addOn {
+  width: 180px;
+  height: auto;
+  margin-left: -35px;
+  border-radius: 10px;
+
+  @media screen and (max-width: 767px){
+    width: auto;
+    height: 240px;
+    margin-left: 0;
+    margin-top: -120px;
+  }
+  @media screen and (max-width: 374px){
+    width: auto;
+    height: 160px;
+    margin-left: 0;
+    margin-top: -80px;
+  }
+
+}
