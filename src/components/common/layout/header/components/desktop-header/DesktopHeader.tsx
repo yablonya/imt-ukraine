@@ -22,7 +22,7 @@ const DesktopHeader = () => {
             href={item.link}
             sx={styles.link(pathName.split('/')[1], item.link.split('/')[1])}
           >
-            <Typography variant='h5'>{item.label}</Typography>
+            <Typography variant='h6'>{item.label}</Typography>
           </Link>
         ))}
       </Toolbar>

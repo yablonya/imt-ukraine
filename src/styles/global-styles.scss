@@ -12,3 +12,12 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a1a1a1;
+}

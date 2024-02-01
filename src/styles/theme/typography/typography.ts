@@ -11,7 +11,7 @@ const typography: TypographyOptions = {
   body1: {
     fontSize: 16,
     fontWeight: 400,
-    lineHeight: 1.5,
+    lineHeight: 1.4,
   },
 
   body2: {
@@ -38,13 +38,19 @@ const typography: TypographyOptions = {
     lineHeight: 1.28,
   },
 
-  h4: {
+	h4: {
+		fontSize: 24,
+		fontWeight: 400,
+		lineHeight: 1.28,
+	},
+
+  h5: {
     fontSize: 20,
     fontWeight: 400,
     lineHeight: 1.28,
   },
 
-  h5: {
+  h6: {
     fontSize: 18,
     fontWeight: 400,
     lineHeight: 1.28,
