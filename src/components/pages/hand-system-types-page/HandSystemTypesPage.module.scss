@@ -1,0 +1,11 @@
+.handSystem {
+  height: auto;
+  max-width: 900px;
+  width: 60%;
+
+  @media screen and (max-width: 1199px){
+    height: auto;
+    width: 100%;
+    padding: 70px 40px;
+  }
+}
