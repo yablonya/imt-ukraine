@@ -14,10 +14,9 @@ import {ChevronDownIcon} from "@heroicons/react/24/outline";
 interface AccordionBlockProps {
 	headerText: string;
 	mainText: string | ReactNode;
-	key?: any;
 }
 
-const AccordionBlock: FC<AccordionBlockProps> = ({headerText, mainText, key}) => {
+const AccordionBlock: FC<AccordionBlockProps> = ({headerText, mainText, ...rest}) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const handleClick = () => {
@@ -29,8 +28,8 @@ const AccordionBlock: FC<AccordionBlockProps> = ({headerText, mainText, key}) =>
 			expanded={isOpen}
 			onChange={handleClick}
 			sx={styles.accordionBlock}
-			// disableGutters
-			key={key}
+			disableGutters
+			{...rest}
 		>
 			<AccordionSummary
 				expandIcon={<ChevronDownIcon width={24} color={'white'}/>}

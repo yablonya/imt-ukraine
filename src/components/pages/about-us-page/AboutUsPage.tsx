@@ -19,6 +19,7 @@ import MobileAboutInvictus
 
 const AboutUsPage = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('desktopSemiMedium'));
+
   return (
     <PageLayout>
       {!isMobile ? (

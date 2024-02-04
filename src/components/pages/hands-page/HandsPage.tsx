@@ -31,7 +31,7 @@ const HandsPage = () => {
 						<br/>
 						Допоміжні додатки
 					</Typography>
-					<Link href={"/hands/system-types"}>
+					<Link href={"/hands/hand-system-types"}>
 						<Typography variant='h5' sx={sxStyles.learnMoreLink}>
 							Ознайомитись...
 						</Typography>

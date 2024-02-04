@@ -9,12 +9,16 @@ interface AddOnCardProps {
 	image: StaticImageData,
 	title: string,
 	text: string,
-	key: any,
 }
 
-const AddOnCard: FC<AddOnCardProps> = ({image, title, text, key}) => {
+const AddOnCard: FC<AddOnCardProps> = ({
+	image,
+	title,
+	text,
+	...rest
+}) => {
 	return (
-		<Box sx={sxStyles.addOnCard} key={key}>
+		<Box sx={sxStyles.addOnCard} {...rest}>
 			<Image src={image} alt={title} className={styles.addOn}/>
 			<Box sx={sxStyles.addOnCardTextBox}>
 				<Typography variant='h5'>
