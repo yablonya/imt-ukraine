@@ -66,23 +66,18 @@ export const imageBlockSubtitle: SxProps<Theme> = {
 export const systemTypes: SxProps<Theme> = {
 	position: 'relative',
 	display: 'flex',
+	transition: 'all 0.5s ease-out',
+	gap: '25px',
 	flexDirection: {
 		mobile: 'column',
 		desktopMedium: 'row',
 	},
-
-	gap: {
-		mobile: '25px',
-		desktopSemiMedium: '30px',
-	},
-
 	justifyContent: {
 		mobile: 'flex-start',
 		desktopMedium: 'space-between',
 	},
-
 	margin: {
 		mobile: '30px 25px 50px',
-		desktopSemiMedium: '60px 50px 60px',
+		desktopSemiMedium: '80px 50px 60px',
 	}
 }

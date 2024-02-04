@@ -10,9 +10,14 @@ import theme from "@/styles/theme/theme";
 import {handSystemsDescriptions} from "@/components/pages/hand-system-types-page/constants";
 import AccordionBlock from "@/components/common/ui/accordion-block/AccordionBlock";
 import HandTypeFoldingBlock from "@/components/common/ui/hand-type-folding-block/HandTypeFoldingBlock";
+import {useEffect, useState} from "react";
 
 const HandSystemTypesPage = () => {
+	const [openedBlock, setOpenedBlock] = useState('');
 	const isMobile = useMediaQuery(theme.breakpoints.down('desktopMedium'));
+
+	useEffect(() => {
+	}, [openedBlock]);
 
 	return (
 		<PageLayout>
@@ -40,6 +45,8 @@ const HandSystemTypesPage = () => {
 							key={index}
 							title={desc.title}
 							mainText={desc.text}
+							openedBlock={openedBlock}
+							setOpenedBlock={setOpenedBlock}
 						/>
 					)
 				))}

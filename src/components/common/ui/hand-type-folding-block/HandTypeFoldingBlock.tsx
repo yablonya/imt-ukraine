@@ -1,7 +1,7 @@
 'use client'
 
-import {FC, ReactNode, useEffect, useRef, useState} from "react";
-import {Box, Typography} from "@mui/material";
+import {Dispatch, FC, ReactNode, SetStateAction, useEffect, useRef, useState} from "react";
+import {Accordion, AccordionDetails, AccordionSummary, Box, Typography} from "@mui/material";
 import * as styles from './HandTypeFoldingBlock.styles';
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import useWindowWidth from "@/hooks/use-window-width/useWindowWidth";
@@ -9,11 +9,15 @@ import useWindowWidth from "@/hooks/use-window-width/useWindowWidth";
 interface HandTypeFoldingBlockProps {
 	title: string,
 	mainText: string | ReactNode,
+	openedBlock: string,
+	setOpenedBlock: Dispatch<SetStateAction<string>>,
 }
 
 const HandTypeFoldingBlock: FC<HandTypeFoldingBlockProps> = ({
 	title,
 	mainText,
+	openedBlock,
+	setOpenedBlock,
 	...rest
 }) => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -25,49 +29,81 @@ const HandTypeFoldingBlock: FC<HandTypeFoldingBlockProps> = ({
 
 	useEffect(() => {
 		if (blockRef.current) {
-			// console.log(blockRef.current.getBoundingClientRect().left)
 			setLeftDistance(blockRef.current.getBoundingClientRect().left);
 		}
 	}, [windowWidth, isOpen]);
 
+	useEffect(() => {
+		if (openedBlock !== title && openedBlock !== '') {
+			handleClose()
+		}
+	}, [openedBlock]);
 
-	const toggleOpen = () => {
-		if (!isOpen) {
+
+	const handleOpen = () => {
+		if (openedBlock !== title && openedBlock !== '') {
+			setOpenedBlock(title)
+			setTimeout(() => {
+				setIsOpen(true);
+				setTimeout(() => {
+					setIsDropped(true);
+					setTimeout(() => {
+						setIsStretched(true);
+					}, 350);
+				}, 500);
+			}, 800)
+		} else {
+			setOpenedBlock(title)
 			setIsOpen(true);
 			setTimeout(() => {
 				setIsDropped(true);
+				setTimeout(() => {
+					setIsStretched(true);
+				}, 350);
 			}, 500);
-			setTimeout(() => {
-				setIsStretched(true);
-			}, 850);
-		} else {
+		}
+
+	}
+
+	const handleClose = () => {
+		if (isOpen) {
 			setIsStretched(false);
 			setTimeout(() => {
 				setIsDropped(false);
+				setTimeout(() => {
+					setIsOpen(false);
+				}, 450);
 			}, 500);
-			setTimeout(() => {
-				setIsOpen(false);
-			}, 950);
 		}
 	}
 
 	return (
 		<Box {...rest}>
-			<Box sx={styles.closingBlock} onClick={toggleOpen}>
+			<Box
+				sx={styles.closingBlock}
+				onClick={() => {
+					handleClose();
+					setOpenedBlock('')
+				}}
+			>
 				<XMarkIcon style={{width: '35px', color: '#3D8361'}}/>
 			</Box>
-			<Box
+			<Accordion
 				ref={blockRef}
-				sx={styles.foldingBlock(isOpen, isDropped, leftDistance, isStretched)}
-				onClick={toggleOpen}
+				disableGutters
+				sx={styles.accordeonBlock(isOpen, isDropped, leftDistance)}
+				expanded={isStretched}
+				onClick={handleOpen}
 			>
-				<Typography variant='h6' sx={styles.foldingBlockTitle(isOpen)} >
-					{title}
-				</Typography>
-				<Box sx={styles.foldingBlockMaintext(isOpen, isStretched)}>
+				<AccordionSummary sx={styles.accordeonTitle(isOpen, isDropped)}>
+					<Typography variant='h6' sx={styles.accordeonTitleText} >
+						{title}
+					</Typography>
+				</AccordionSummary>
+				<AccordionDetails sx={styles.accordeonMainText}>
 					{mainText}
-				</Box>
-			</Box>
+				</AccordionDetails>
+			</Accordion>
 		</Box>
 	);
 };

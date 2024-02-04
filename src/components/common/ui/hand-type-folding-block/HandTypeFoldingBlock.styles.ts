@@ -2,7 +2,8 @@ import {SxProps, Theme} from "@mui/system";
 import theme from "@/styles/theme/theme";
 
 export const closingBlock: SxProps<Theme> = {
-	width: '230px',
+	cursor: 'pointer',
+	width: '245px',
 	height: '75px',
 	border: '2px solid #3D8361',
 	borderRadius: '15px',
@@ -11,46 +12,52 @@ export const closingBlock: SxProps<Theme> = {
 	justifyContent: 'center',
 };
 
-export const foldingBlock = (
+export const accordeonBlock = (
 	isOpen: boolean,
 	isDropped: boolean,
 	leftDistance: number,
-	isStretched: boolean
-): SxProps<Theme> => ({
-	transition: theme.transitions.create(['width', 'height', 'transform', 'margin', 'padding'], {
+	): SxProps<Theme> => ({
+	'&::before': {
+		display: 'none'
+	},
+	transition: theme.transitions.create(['all'], {
 		duration: theme.transitions.duration.standard,
 	}),
-	position: isOpen ? 'absolute' : 'relative',
-	transform: isDropped ? `translateX(-${leftDistance - 50}px)` : 'none',
+	position: isOpen ? 'absolute' : 'static',
+	left: isDropped ? '0px' : `${leftDistance - 50}px`,
+	width: isDropped ? '100%' : '245px',
 	mt: isOpen ? '65px' : '-75px',
-	// left: isOpen ? `0` : 'none',
-	width: isDropped ? '100%' : '230px',
-	height: isStretched ? 'auto' : '75px',
-	color: 'white',
-	minHeight: '75px',
 	backgroundColor: '#3D8361',
+	borderRadius: '15px !important',
+	overflow: 'hidden',
+	color: 'white',
+});
+
+
+export const accordeonTitle = (isOpen: boolean, isDropped: boolean): SxProps<Theme> => ({
+	cursor: isOpen ? 'default !important' : 'pointer',
+	height: '75px',
 	borderRadius: '15px',
-	padding: isStretched ? '16px 25px' : '14px 15px',
-	display: 'flex',
-	flexDirection: 'column',
-	alignItems: 'flex-start',
-	justifyContent: 'center',
+	'& .MuiAccordionSummary-content': {
+		justifyContent: 'center',
+	},
+	'&::before, &::after': {
+		transition: theme.transitions.create(['opacity'], {
+			duration: theme.transitions.duration.standard,
+		}),
+		opacity: isDropped ? 1 : 0,
+		content: '""',
+		height: '1px',
+		flexGrow: 10,
+		backgroundColor: 'white',
+	},
 });
 
-export const foldingBlockTitle = (isOpen: boolean): SxProps<Theme> => ({
-	transition: theme.transitions.create(['textAlign'], {
-		duration: theme.transitions.duration.complex,
-	}),
-	textAlign: isOpen ? 'left' : 'center',
-	width: '100%',
-});
+export const accordeonTitleText: SxProps<Theme> = {
+	textAlign: 'center',
+};
 
-export const foldingBlockMaintext = (isOpen: boolean, isStretched: boolean): SxProps<Theme> => ({
-	transition: theme.transitions.create(['opacity'], {
-		duration: theme.transitions.duration.standard,
-	}),
-	display: isStretched ? 'block' : 'none',
-	opacity: isStretched ? '1' : '0',
-	mt: '15px',
-	typography: 'body 1'
-});
+export const accordeonMainText: SxProps<Theme> = {
+	typography: 'body1',
+	padding: '0px 25px 20px',
+};
