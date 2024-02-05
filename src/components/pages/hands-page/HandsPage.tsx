@@ -1,5 +1,7 @@
+'use client';
+
 import PageLayout from "@/components/common/layout/page-layout/PageLayout";
-import {Box, Typography, useMediaQuery} from "@mui/material";
+import {Box, Fade, Typography} from "@mui/material";
 import Image from 'next/image';
 import handSystem from '../../../../public/images/hand-system.png';
 import styles from './HandsPage.module.scss';
@@ -7,16 +9,23 @@ import * as sxStyles from './HandsPage.styles';
 import Link from "next/link";
 import AddOnCard from "./components/add-on-card/AddOnCard";
 import { addOnsDescriptions } from "./constants";
-import theme from "@/styles/theme/theme";
-
-
+import {useEffect, useState} from "react";
 
 const HandsPage = () => {
+	const [checked, setChecked] = useState(false);
+
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setChecked(true);
+		}, 1300);
+		return () => clearTimeout(timer);
+	}, []);
+
 	return (
 		<PageLayout>
-			<Box sx={sxStyles.systemTypesBlock}>
+			<Box sx={sxStyles.systemTypesBlock(checked)}>
 				<Image src={handSystem} alt='VHP Hand system image' className={styles.handSystem}/>
-				<Box sx={sxStyles.systemTypes}>
+				<Box sx={sxStyles.systemTypes(checked)}>
 					<Typography variant='h3' sx={sxStyles.systemTypesTitle}>
 						Типи ручної системи VHP
 					</Typography>

@@ -6,6 +6,11 @@
   @media screen and (max-width: 1200px){
     width: 100%
   }
+
+  @media screen and (min-width: 1919px){
+    width: auto;
+    height: 100%;
+  }
 }
 
 .aboutFirstHand {

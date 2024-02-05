@@ -1,6 +1,7 @@
 import {SxProps, Theme} from "@mui/system";
+import theme from "@/styles/theme/theme";
 
-export const imageBlock: SxProps<Theme> = {
+export const imageBlock = (checked: boolean): SxProps<Theme> => ({
 	display: 'flex',
 	flexDirection: 'column',
 	alignItems: 'center',
@@ -10,6 +11,9 @@ export const imageBlock: SxProps<Theme> = {
 		desktopSemiMedium: 'black',
 	},
 	'&::before': {
+		transition: theme.transitions.create(['opacity'], {
+			duration: theme.transitions.duration.standard,
+		}),
 		display: {
 			mobile: 'block',
 			desktopSemiMedium: 'none',
@@ -20,11 +24,11 @@ export const imageBlock: SxProps<Theme> = {
 		zIndex: '0',
 		top: '0',
 		left: '0',
-		opacity: '0.85',
 		height: '100%',
 		width: '100%',
+		opacity: checked ? 0.85 : 0,
 	}
-}
+});
 
 export const imageBlockText: SxProps<Theme> = {
 	textAlign: {
@@ -43,7 +47,10 @@ export const imageBlockText: SxProps<Theme> = {
 	height: '100%',
 }
 
-export const imageBlockTitle: SxProps<Theme> = {
+export const imageBlockTitle = (checked: boolean): SxProps<Theme> => ({
+	transition: theme.transitions.create(['opacity'], {
+		duration: theme.transitions.duration.standard,
+	}),
 	m: {
 		mobile: 0,
 		desktopSemiMedium: '80px 0 13px',
@@ -52,7 +59,11 @@ export const imageBlockTitle: SxProps<Theme> = {
 		mobile: 'h3',
 		desktopSemiMedium: 'h1',
 	},
-}
+	opacity: {
+		mobile: checked ? 1 : 0,
+		desktopSemiMedium: 1,
+	},
+});
 
 export const imageBlockSubtitle: SxProps<Theme> = {
 	mb: '16px',

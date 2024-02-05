@@ -1,6 +1,7 @@
 import {SxProps, Theme} from "@mui/system";
+import theme from "@/styles/theme/theme";
 
-export const systemTypesBlock: SxProps<Theme> = {
+export const systemTypesBlock = (checked: boolean): SxProps<Theme> => ({
 	display: 'flex',
 	justifyContent: 'center',
 	alignItems:'center',
@@ -10,6 +11,9 @@ export const systemTypesBlock: SxProps<Theme> = {
 	},
 	position: 'relative',
 	'&::before': {
+		transition: theme.transitions.create(['opacity'], {
+			duration: theme.transitions.duration.standard,
+		}),
 		display: {
 			mobile: 'block',
 			desktopSemiMedium: 'none',
@@ -20,13 +24,16 @@ export const systemTypesBlock: SxProps<Theme> = {
 		zIndex: '0',
 		top: '0',
 		left: '0',
-		opacity: '0.85',
+		opacity: checked ? 0.85 : 0,
 		height: '100%',
 		width: '100%',
 	}
-}
+});
 
-export const systemTypes: SxProps<Theme> = {
+export const systemTypes = (checked: boolean): SxProps<Theme> => ({
+	transition: theme.transitions.create(['opacity'], {
+		duration: theme.transitions.duration.standard,
+	}),
 	position: {
 		mobile: 'absolute',
 		desktopSemiMedium: 'relative',
@@ -44,10 +51,14 @@ export const systemTypes: SxProps<Theme> = {
 		mobile: '100%',
 		desktopSemiMedium: 'auto',
 	},
+	opacity: {
+		mobile: checked ? 1 : 0,
+		desktopSemiMedium: 1,
+	},
 	display: 'flex',
 	justifyContent: 'center',
 	flexDirection: 'column',
-}
+});
 
 export const systemTypesTitle: SxProps<Theme> = {
 	typography: {

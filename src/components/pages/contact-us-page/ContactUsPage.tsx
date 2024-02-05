@@ -1,5 +1,5 @@
 import PageLayout from "@/components/common/layout/page-layout/PageLayout";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Fade, Typography } from "@mui/material";
 import Image from 'next/image';
 import * as sxStyles from './ContactUsPage.styles'
 import styles from './ContactUsPage.module.scss'
@@ -18,9 +18,11 @@ const ContactUsPage = () => {
 					alt={"Hands art image"}
 					className={styles.handsArt}
 				/>
-				<Typography variant='h1' sx={sxStyles.handsArtText}>
-					Ми будемо раді вам допомогти
-				</Typography>
+				<Fade in={true} timeout={800}>
+					<Typography variant='h1' sx={sxStyles.handsArtText}>
+						Ми будемо раді вам допомогти
+					</Typography>
+				</Fade>
 			</Box>
 			<Box sx={sxStyles.linksBlock}>
 				{contactLinks.map((link, index) => (
