@@ -1,19 +1,34 @@
-import {Box, List, ListItem, ListItemIcon, Typography} from "@mui/material";
+'use client';
+
+import {Box, Fade, List, ListItem, ListItemIcon, Typography} from "@mui/material";
 import * as sxStyles from './MobileVHPBlock.styles';
 import styles from '../../AboutUsPage.module.scss';
 import Image from "next/image";
 import countries from "../../../../../../public/images/countries.png";
 import FlexibleTextBlock from "@/components/common/ui/flexible-text-block/FlexibleTextBlock";
 import {CircleOutlined} from "@mui/icons-material";
+import {useEffect, useState} from "react";
+import useDelay from "@/hooks/use-delay/useDelay";
 
 const MobileVHPBlock = () => {
+	const checked = useDelay(800)
+
   return (
-    <Box>
-      <Box sx={sxStyles.vhpImageBlock}>
+    <Box
+	    sx={{
+				display: {
+					mobile: 'block',
+					desktopSemiMedium: 'none',
+				}
+	    }}
+    >
+      <Box sx={sxStyles.vhpImageBlock(checked)}>
         <Image src={countries} alt={'Countries image'} className={styles.countriesImg} />
-        <Typography variant='h2' sx={sxStyles.vhpHeader}>
-          Victoria Hand Project
-        </Typography>
+        <Fade in={checked} timeout={600}>
+	        <Typography variant='h2' sx={sxStyles.vhpHeader}>
+		        Victoria Hand Project
+	        </Typography>
+        </Fade>
       </Box>
       <FlexibleTextBlock sx={sxStyles.vhpText}>
         Victoria Hand Project (VHP) — це канадська некомерційна організація, заснована в липні 2015 року у Вікторії,

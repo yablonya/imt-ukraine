@@ -1,23 +1,27 @@
 import {SxProps, Theme} from "@mui/system";
+import theme from "@/styles/theme/theme";
 
-export const vhpImageBlock: SxProps<Theme> = {
+export const vhpImageBlock = (checked: boolean): SxProps<Theme> => ({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
   padding: '20px 10px',
   position: 'relative',
   '&::before': {
+	  transition: theme.transitions.create(['opacity'], {
+		  duration: theme.transitions.duration.standard,
+	  }),
     content: '""',
     background: 'black',
     position: 'absolute',
     zIndex: '0',
     top: '0',
     left: '0',
-    opacity: '0.85',
+    opacity: checked ? 0.85 : 0,
     height: '100%',
     width: '100%',
   }
-};
+});
 
 export const vhpHeader: SxProps<Theme> = {
   position: 'absolute',

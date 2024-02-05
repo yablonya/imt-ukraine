@@ -22,11 +22,8 @@ const AboutUsPage = () => {
 
   return (
     <PageLayout>
-      {!isMobile ? (
-        <DesktopVHPBlock/>
-      ) : (
-        <MobileVHPBlock/>
-      )}
+	    <DesktopVHPBlock/>
+	    <MobileVHPBlock/>
       <Box sx={sxStyles.technologyBlock}>
         <Box sx={sxStyles.technologyTextContent}>
 	        <Typography variant='h3' sx={sxStyles.technologyHeader}>

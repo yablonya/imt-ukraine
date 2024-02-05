@@ -1,7 +1,7 @@
 'use client';
 
 import PageLayout from "@/components/common/layout/page-layout/PageLayout";
-import {Box, Typography, useMediaQuery} from "@mui/material";
+import {Box, Fade, Typography, useMediaQuery} from "@mui/material";
 import Image from "next/image";
 import * as sxStyles from './HandSystemTypesPage.styles'
 import handSystem2 from '../../../../public/images/hand-system2.png';
@@ -11,19 +11,21 @@ import {handSystemsDescriptions} from "@/components/pages/hand-system-types-page
 import AccordionBlock from "@/components/common/ui/accordion-block/AccordionBlock";
 import HandTypeFoldingBlock from "@/components/common/ui/hand-type-folding-block/HandTypeFoldingBlock";
 import {useEffect, useState} from "react";
+import useDelay from "@/hooks/use-delay/useDelay";
 
 const HandSystemTypesPage = () => {
-	const [openedBlock, setOpenedBlock] = useState('');
 	const isMobile = useMediaQuery(theme.breakpoints.down('desktopMedium'));
+	const [openedBlock, setOpenedBlock] = useState('');
+	const checked = useDelay(800)
 
 	useEffect(() => {
 	}, [openedBlock]);
 
 	return (
 		<PageLayout>
-			<Box sx={sxStyles.imageBlock}>
+			<Box sx={sxStyles.imageBlock(checked)}>
 				<Box sx={sxStyles.imageBlockText}>
-					<Typography variant='h1' sx={sxStyles.imageBlockTitle}>
+					<Typography variant='h1' sx={sxStyles.imageBlockTitle(checked)}>
 						Типи ручної системи VHP
 					</Typography>
 					<Typography variant='h5' sx={sxStyles.imageBlockSubtitle}>
