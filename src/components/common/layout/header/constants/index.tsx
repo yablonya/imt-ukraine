@@ -14,26 +14,8 @@ export const mainLinks = [
   },
   {
     icon: <ChatBubbleBottomCenterTextIcon/>,
-    label: 'Про Нас',
+    label: 'Про нас',
     link: '/about-us',
-    tabs : [
-      {
-        label: 'Victoria Hand Project',
-        link: '/about-us?tab=victoria-hand-project',
-      },
-      {
-        label: 'Технологія проекту Victoria Hand',
-        link: '/about-us?tab=victoria-hand-project-technology',
-      },
-      {
-        label: 'Особливості системи Victoria Hand',
-        link: '/about-us?tab=victoria-hand-system-features',
-      },
-      {
-        label: 'Про Інвіктус Медичні Технології Україна',
-        link: '/about-us?tab=about-imtu',
-      },
-    ]
   },
   {
     icon: <HandRaisedIcon/>,
@@ -52,7 +34,7 @@ export const mainLinks = [
   },
   {
     icon: <ChatBubbleLeftRightIcon/>,
-    label: 'Зв\'яжіться з Нами',
+    label: "Зв'яжіться з нами",
     link: '/contact-us',
   },
 ];

@@ -7,10 +7,10 @@ const LowerFooter = () => {
   return (
     <Box sx={sxStyles.lowerFooter}>
       <Box sx={sxStyles.pptc}>
-        <Link href={'#'} className={styles['footerLinks']}>
+        <Link href={'/privacy-policy'} className={styles['footerLinks']}>
           Політика конфіденційності
         </Link>
-        <Link href={'#'} className={styles['footerLinks']}>
+        <Link href={'/privacy-policy'} className={styles['footerLinks']}>
           Правила та умови
         </Link>
       </Box>

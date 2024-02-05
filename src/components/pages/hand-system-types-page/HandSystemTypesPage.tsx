@@ -11,18 +11,12 @@ import {handSystemsDescriptions} from "@/components/pages/hand-system-types-page
 import AccordionBlock from "@/components/common/ui/accordion-block/AccordionBlock";
 import HandTypeFoldingBlock from "@/components/common/ui/hand-type-folding-block/HandTypeFoldingBlock";
 import {useEffect, useState} from "react";
+import useDelay from "@/hooks/use-delay/useDelay";
 
 const HandSystemTypesPage = () => {
 	const isMobile = useMediaQuery(theme.breakpoints.down('desktopMedium'));
 	const [openedBlock, setOpenedBlock] = useState('');
-	const [checked, setChecked] = useState(false);
-
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			setChecked(true);
-		}, 1300);
-		return () => clearTimeout(timer);
-	}, []);
+	const checked = useDelay(800)
 
 	useEffect(() => {
 	}, [openedBlock]);

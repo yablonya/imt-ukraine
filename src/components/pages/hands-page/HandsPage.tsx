@@ -10,16 +10,10 @@ import Link from "next/link";
 import AddOnCard from "./components/add-on-card/AddOnCard";
 import { addOnsDescriptions } from "./constants";
 import {useEffect, useState} from "react";
+import useDelay from "@/hooks/use-delay/useDelay";
 
 const HandsPage = () => {
-	const [checked, setChecked] = useState(false);
-
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			setChecked(true);
-		}, 1300);
-		return () => clearTimeout(timer);
-	}, []);
+	const checked = useDelay(800)
 
 	return (
 		<PageLayout>

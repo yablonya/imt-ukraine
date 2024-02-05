@@ -8,16 +8,10 @@ import countries from "../../../../../../public/images/countries.png";
 import FlexibleTextBlock from "@/components/common/ui/flexible-text-block/FlexibleTextBlock";
 import {CircleOutlined} from "@mui/icons-material";
 import {useEffect, useState} from "react";
+import useDelay from "@/hooks/use-delay/useDelay";
 
 const MobileVHPBlock = () => {
-	const [checked, setChecked] = useState(false);
-
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			setChecked(true);
-		}, 1600);
-		return () => clearTimeout(timer);
-	}, []);
+	const checked = useDelay(800)
 
   return (
     <Box

@@ -7,15 +7,9 @@ import styles from "@/components/pages/about-us-page/AboutUsPage.module.scss";
 import {Box, Fade, List, ListItem, ListItemIcon, Typography} from "@mui/material";
 import {CircleOutlined} from "@mui/icons-material";
 import {useEffect, useState} from "react";
+import useDelay from "@/hooks/use-delay/useDelay";
 const DesktopVHPBlock = () => {
-	const [checked, setChecked] = useState(false);
-
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			setChecked(true);
-		}, 1300);
-		return () => clearTimeout(timer);
-	}, []);
+	const checked = useDelay(800)
 
   return (
     <Box sx={sxStyles.vhpBlock(checked)}>
