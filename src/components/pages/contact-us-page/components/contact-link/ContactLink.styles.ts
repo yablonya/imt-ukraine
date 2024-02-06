@@ -32,11 +32,11 @@ export const link: SxProps<Theme> = {
 	'&:hover': {
 		color: 'white',
 		backgroundColor: '#3D8361',
-		'& .css-rzixtd-MuiTypography-root': {
+		'& .MuiTypography-root:first-of-type': {
 			display: 'none',
 			opacity: 0,
 		},
-		'& .css-131xtb4-MuiTypography-root': {
+		'& .MuiTypography-root:nth-of-type(2)': {
 			desktop: {
 				display: 'block',
 				opacity: 1,

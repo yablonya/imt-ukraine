@@ -54,10 +54,11 @@ const HandsPage = () => {
 				<Box sx={sxStyles.addOnsCards}>
 					{addOnsDescriptions.map((addOn, index) => (
 						<AddOnCard
+							key={index}
 							image={addOn.image}
 							title={addOn.title}
 							text={addOn.text}
-							key={index}
+							cardColor={addOn.cardColor}
 						/>
 					))}
 				</Box>
