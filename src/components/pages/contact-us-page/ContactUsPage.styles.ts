@@ -1,4 +1,5 @@
 import {SxProps, Theme} from "@mui/system";
+import theme from "@/styles/theme/theme";
 
 export const handsArtBlock: SxProps<Theme> = {
 	display: 'flex',
@@ -113,3 +114,12 @@ export const sendButton: SxProps<Theme> = {
 		desktop: 'fit-content'
 	}
 }
+
+export const toast = (isError: boolean): SxProps<Theme> => ({
+	color: 'white',
+	maxWidth: '500px',
+	margin: '0 25px 20px 25px',
+	'& .MuiSnackbarContent-root': {
+		backgroundColor: isError ? '#d32f2f' : '#43a047',
+	}
+})

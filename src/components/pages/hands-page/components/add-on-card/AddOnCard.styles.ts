@@ -1,6 +1,6 @@
 import {SxProps, Theme} from "@mui/system";
 
-export const addOnCard: SxProps<Theme> = {
+export const addOnCard = (cardColor: string): SxProps<Theme> => ({
 	height: {
 		mobile: 'auto',
 		tablet: '200px',
@@ -16,13 +16,13 @@ export const addOnCard: SxProps<Theme> = {
 		tablet: '30px',
 	},
 	borderRadius: '15px',
-	backgroundColor: '#3D8361',
-	color: 'white',
+	backgroundColor: cardColor,
+	color: cardColor === '#3D8361' ? 'white' : 'black',
 	flexDirection: {
 		mobile: 'column',
 		tablet: 'row'
 	}
-}
+})
 
 export const addOnCardTextBox: SxProps<Theme> = {
 	padding: {

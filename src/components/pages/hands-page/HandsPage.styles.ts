@@ -81,7 +81,7 @@ export const systemTypesText: SxProps<Theme> = {
 
 export const learnMoreLink: SxProps<Theme> = {
 	width: 'fit-content',
-	textDecoration: 'underline 1px solid #1C6758',
+	textDecoration: 'underline #1C6758',
 	textUnderlineOffset: '7px',
 	cursor: 'pointer',
 	'&:hover': {

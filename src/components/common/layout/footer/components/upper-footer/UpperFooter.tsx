@@ -15,7 +15,7 @@ const UpperFooter = () => {
       <Box sx={sxStyles.footerLists}>
         <Box>
           {/* eslint-disable-next-line react/no-unescaped-entities */}
-          <Typography sx={sxStyles.linksListHeader}>Зв'яжіться з Нами</Typography>
+          <Typography sx={sxStyles.linksListHeader}>Зв'яжіться з нами</Typography>
           <Box sx={sxStyles.linksList}>
             {contactUsLinks.map((item, index) => (
               <Link key={index} href={item.link} className={styles['footerLinks']}>
@@ -25,7 +25,7 @@ const UpperFooter = () => {
           </Box>
         </Box>
         <Box>
-          <Typography sx={sxStyles.linksListHeader}>Наші Соц. Мережі</Typography>
+          <Typography sx={sxStyles.linksListHeader}>Наші соцмережі</Typography>
           <Box sx={sxStyles.linksList}>
             {socialNetworksLinks.map((item, index) => (
               <Link key={index} href={item.link} className={styles['footerLinks']}>
