@@ -1,19 +1,19 @@
 'use client';
 
-import PageLayout from "@/components/common/layout/page-layout/PageLayout";
 import { Box, Button, Fade, Snackbar, Typography } from "@mui/material";
 import Image from 'next/image';
-import * as sxStyles from './ContactUsPage.styles'
-import styles from './ContactUsPage.module.scss'
 import handsArt from '../../../../public/images/hands-art.png'
 import writeSticker from '../../../../public/images/write-sticker.png'
-import ContactLink from "@/components/pages/contact-us-page/components/contact-link/ContactLink";
-import {contactLinks} from "@/components/pages/contact-us-page/constants";
+import ContactLink from "./components/contact-link/ContactLink";
+import {contactLinks} from "./constants";
 import Input from "@/components/common/ui/input/Input";
-import {SetStateAction, useState} from "react";
+import {useState} from "react";
 import {FormData} from '@/types/FormData';
 import {formValidator} from "@/lib/utils/ValidateForm";
 import sendEmailLetter from "@/lib/api";
+
+import * as sxStyles from './ContactUsPage.styles'
+import styles from './ContactUsPage.module.scss'
 
 const ContactUsPage = () => {
 	const [sendingResult, setSendingResult] = useState({
@@ -65,7 +65,7 @@ const ContactUsPage = () => {
 	};
 
 	return (
-		<PageLayout>
+		<>
 			<Box sx={sxStyles.handsArtBlock}>
 				<Image
 					src={handsArt}
@@ -159,7 +159,7 @@ const ContactUsPage = () => {
 					sx={sxStyles.toast(sendingResult.isError)}
 				/>
 			</Box>
-		</PageLayout>
+		</>
 	);
 };
 

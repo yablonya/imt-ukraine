@@ -1,22 +1,21 @@
 'use client';
 
-import PageLayout from "@/components/common/layout/page-layout/PageLayout";
-import {Box, Fade, Typography} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 import Image from 'next/image';
 import handSystem from '../../../../public/images/hand-system.png';
-import styles from './HandsPage.module.scss';
-import * as sxStyles from './HandsPage.styles';
 import Link from "next/link";
 import AddOnCard from "./components/add-on-card/AddOnCard";
 import { addOnsDescriptions } from "./constants";
-import {useEffect, useState} from "react";
 import useDelay from "@/hooks/use-delay/useDelay";
+
+import * as sxStyles from './HandsPage.styles';
+import styles from './HandsPage.module.scss';
 
 const HandsPage = () => {
 	const checked = useDelay(800)
 
 	return (
-		<PageLayout>
+		<>
 			<Box sx={sxStyles.systemTypesBlock(checked)}>
 				<Image src={handSystem} alt='VHP Hand system image' className={styles.handSystem}/>
 				<Box sx={sxStyles.systemTypes(checked)}>
@@ -63,7 +62,7 @@ const HandsPage = () => {
 					))}
 				</Box>
 			</Box>
-		</PageLayout>
+		</>
 	);
 };
 

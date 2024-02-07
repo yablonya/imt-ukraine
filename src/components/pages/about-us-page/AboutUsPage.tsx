@@ -1,27 +1,24 @@
 'use client';
 
-import PageLayout from "@/components/common/layout/page-layout/PageLayout";
 import {Box, List, ListItem, ListItemIcon, Typography, useMediaQuery} from "@mui/material";
 import Image from 'next/image';
-import styles from './AboutUsPage.module.scss'
 import DesktopVHPBlock from "./vhp-block/desktop-vhp-block/DesktopVHPBlock";
 import theme from "@/styles/theme/theme";
-import MobileVHPBlock from "@/components/pages/about-us-page/vhp-block/mobile-vhp-block/MobileVHPBlock";
-import * as sxStyles from './AboutUsPage.styles';
+import MobileVHPBlock from "./vhp-block/mobile-vhp-block/MobileVHPBlock";
 import aboutFirstHand from '../../../../public/images/about-first-hand.jpg';
 import {CheckCircleIcon} from "@heroicons/react/24/outline";
-import {featuresList} from "@/components/pages/about-us-page/constants";
-import aboutInvictus from '../../../../public/images/about-invictus.png';
-import DesktopAboutInvictus
-	from "@/components/pages/about-us-page/about-invictus/desktop-about-invictus/DesktopAboutInvictus";
-import MobileAboutInvictus
-	from "@/components/pages/about-us-page/about-invictus/mobile-about-invictus/MobileAboutInvictus";
+import {featuresList} from "./constants";
+import DesktopAboutInvictus from "./about-invictus/desktop-about-invictus/DesktopAboutInvictus";
+import MobileAboutInvictus from "./about-invictus/mobile-about-invictus/MobileAboutInvictus";
+
+import * as sxStyles from './AboutUsPage.styles';
+import styles from './AboutUsPage.module.scss'
 
 const AboutUsPage = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('desktopSemiMedium'));
 
   return (
-    <PageLayout>
+    <>
 	    <DesktopVHPBlock/>
 	    <MobileVHPBlock/>
       <Box sx={sxStyles.technologyBlock}>
@@ -72,7 +69,7 @@ const AboutUsPage = () => {
 	    ) : (
 		    <MobileAboutInvictus/>
 	    )}
-    </PageLayout>
+    </>
   );
 };
 

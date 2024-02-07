@@ -1,13 +1,13 @@
 import {Box, Typography} from "@mui/material";
-import PageLayout from "@/components/common/layout/page-layout/PageLayout";
-import * as sxStyles from './ServicesPage.styles';
-import styles from './ServicesPage.module.scss';
 import Image from "next/image";
 import services from "../../../../public/images/services.png";
 
+import * as sxStyles from './ServicesPage.styles';
+import styles from './ServicesPage.module.scss';
+
 const ServicesPage = () => {
   return (
-    <PageLayout>
+    <>
       <Box sx={sxStyles.servicesBlock}>
         <Image
           src={services}
@@ -30,7 +30,7 @@ const ServicesPage = () => {
           </Typography>
         </Box>
       </Box>
-    </PageLayout>
+    </>
   );
 };
 

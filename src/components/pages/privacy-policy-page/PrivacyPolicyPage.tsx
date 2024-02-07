@@ -1,10 +1,10 @@
-import PageLayout from "@/components/common/layout/page-layout/PageLayout";
-import { Typography } from "@mui/material";
+import {Box, Typography} from "@mui/material";
+
 import * as styles from './PrivacyPolicyPage.styles';
 
 const PrivacyPolicyPage = () => {
 	return (
-		<PageLayout sx={styles.pageLayout}>
+		<Box sx={styles.pageLayout}>
 			<Typography variant='h4' sx={styles.title}>
 				Хто ми
 			</Typography>
@@ -109,7 +109,7 @@ const PrivacyPolicyPage = () => {
 			<Typography sx={styles.text}>
 				Коментарі відвідувачів можуть бути перевірені за допомогою автоматичної служби виявлення спаму.
 			</Typography>
-		</PageLayout>
+		</Box>
 	);
 }
 

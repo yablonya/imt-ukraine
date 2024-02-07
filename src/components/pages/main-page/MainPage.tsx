@@ -1,6 +1,5 @@
 'use client';
 
-import PageLayout from "@/components/common/layout/page-layout/PageLayout";
 import {Box, Fade, Typography, useMediaQuery} from "@mui/material";
 import Image from 'next/image';
 import mainFirstImg from '../../../../public/images/main-first-img.jpg';
@@ -8,16 +7,17 @@ import hand1 from '../../../../public/images/hand1.jpg';
 import hand2 from '../../../../public/images/hand2.jpg';
 import handsInBox from '../../../../public/images/hands-in-box.jpg';
 import printing from '../../../../public/images/printing.jpg';
-import * as sxStyles from './MainPage.styles';
-import styles from './MainPage.module.scss'
 import mergeSx from "@/lib/utils/MergeSxStylesUtil";
 import theme from "@/styles/theme/theme";
+
+import * as sxStyles from './MainPage.styles';
+import styles from './MainPage.module.scss'
 
 const MainPage = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('desktopSemiMedium'));
 
   return (
-    <PageLayout>
+    <>
       <Fade in={true} timeout={800}>
 	      <Box sx={sxStyles.firstBlock}>
 		      <Image
@@ -96,7 +96,7 @@ const MainPage = () => {
 		      </Box>
 	      </Box>
       </Fade>
-    </PageLayout>
+    </>
   );
 };
 
