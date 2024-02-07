@@ -7,7 +7,6 @@ import {SxProps, Theme} from "@mui/system";
 import mergeSx from "@/lib/utils/MergeSxStylesUtil";
 
 interface PageLayoutProps {
-  title?: string;
   description?: string;
   children?: ReactNode;
   sx?: SxProps<Theme>;
