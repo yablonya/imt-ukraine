@@ -1,7 +1,7 @@
 export const UAFlag = () => (
   <svg
-    width="30"
-    height="20"
+    width="27"
+    height="18"
     viewBox="0 0 513 343"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

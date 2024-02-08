@@ -7,9 +7,12 @@ import * as styles from './MobileHeader.styles';
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline";
 import MobileDrawer from "./components/mobile-drawer/MobileDrawer";
 import {useState} from "react";
+import LangSwitcher from "@/components/common/ui/lang-switcher/LangSwitcher";
+import {useLocale} from "next-intl";
 
 const MobileHeader = () => {
-  const [drawerState, setDrawerState] = useState<boolean>(false)
+  const [drawerState, setDrawerState] = useState<boolean>(false);
+	const locale = useLocale();
   const toggleDrawer = () => {
     setDrawerState(!drawerState)
   };
@@ -25,7 +28,7 @@ const MobileHeader = () => {
         />
       </Link>
       <Box sx={styles.rightBlock}>
-        <Typography>UA</Typography>
+	      <LangSwitcher locale={locale}/>
         {!drawerState ? (
           <Bars3Icon
             width={27}

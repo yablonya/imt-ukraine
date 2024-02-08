@@ -1,0 +1,43 @@
+{
+  "navigation": {
+    "header": {
+      "main": "Startseite",
+      "about_us": "Über uns",
+      "hands": "Hände",
+      "services": "Dienstleistungen",
+      "contact_us": "Kontakt"
+    },
+    "footer": {
+      "contact_us": "Kontakt",
+      "send_message": "Senden Sie uns eine Nachricht",
+      "address": "23, Stepanera Avenue, Kiew, 04073, Ukraine, Raum 202",
+      "social_networks": "Unsere sozialen Netzwerke",
+      "privacy_policy": "Datenschutzbestimmungen",
+      "terms_and_conditions": "Bedingungen und Konditionen"
+    }
+  },
+
+  "pages": {
+    "main": {
+
+    },
+    "about_us": {
+
+    },
+    "hands": {
+
+    },
+    "hand_system_types": {
+
+    },
+    "services": {
+
+    },
+    "faq": {
+
+    },
+    "contact_us": {
+
+    }
+  }
+}

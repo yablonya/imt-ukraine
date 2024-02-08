@@ -1,0 +1,43 @@
+{
+  "navigation": {
+    "header": {
+      "main": "Main",
+      "about_us": "About us",
+      "hands": "Hands",
+      "services": "Services",
+      "contact_us": "Contact us"
+    },
+    "footer": {
+      "contact_us": "Contact us",
+      "send_message": "Send us a message",
+      "address": "23 Stepana Bandera Avenue, Kyiv, Ukraine, 04073, room 202",
+      "social_networks": "Our social networks",
+      "privacy_policy": "Політика конфіденційності",
+      "terms_and_conditions": "Privacy policy"
+    }
+  },
+
+  "pages": {
+    "main": {
+
+    },
+    "about_us": {
+
+    },
+    "hands": {
+
+    },
+    "hand_system_types": {
+
+    },
+    "services": {
+
+    },
+    "faq": {
+
+    },
+    "contact_us": {
+
+    }
+  }
+}

@@ -9,7 +9,10 @@ export const lowerFooter: SxProps<Theme> = {
     desktop: '16px 25px 18px',
   },
   display: 'flex',
-  alignItems: 'center',
+	alignItems: {
+		mobile: 'flex-start',
+		mobileSemiMedium: 'center'
+	},
   gap: {
     mobile: '13px',
     desktop: '80px'
@@ -33,7 +36,14 @@ export const pptc: SxProps<Theme> = {
     mobile: '12px',
     desktop: '14px',
   },
+	flexDirection: {
+		mobile: 'column',
+		mobileSemiMedium: 'row'
+	},
   display: 'flex',
-  gap: '40px',
-  alignItems: 'center',
+  gap: {
+	  mobile: '13px',
+	  mobileSemiMedium: '40px'
+  },
+	textAlign: 'center'
 }

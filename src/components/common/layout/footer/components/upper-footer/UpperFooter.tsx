@@ -1,12 +1,17 @@
-import {Box, Typography} from "@mui/material";
-import * as sxStyles from './UpperFooter.styles'
-import styles from '../../Footer.module.scss';
-import {contactUsLinks, socialNetworksLinks} from "@/components/common/layout/footer/components/upper-footer/constants";
-import Link from "next/link";
+import {Box, Link, Typography} from "@mui/material";
+import {socialNetworksLinks} from "@/components/common/layout/footer/components/upper-footer/constants";
 import Image from 'next/image';
 import logo from '../../../../../../../public/images/logo.png'
+import {useLocale, useTranslations} from "next-intl";
+import mergeSx from "@/lib/utils/MergeSxStylesUtil";
+
+import * as sxStyles from './UpperFooter.styles'
+import styles from '../../Footer.module.scss';
 
 const UpperFooter = () => {
+	const t = useTranslations('navigation.footer')
+	const locale = useLocale();
+
   return (
     <Box sx={sxStyles.upperFooter}>
       <Link href={'/'}>
@@ -14,24 +19,38 @@ const UpperFooter = () => {
       </Link>
       <Box sx={sxStyles.footerLists}>
         <Box>
-          {/* eslint-disable-next-line react/no-unescaped-entities */}
-          <Typography sx={sxStyles.linksListHeader}>Зв'яжіться з нами</Typography>
-          <Box sx={sxStyles.linksList}>
-            {contactUsLinks.map((item, index) => (
-              <Link key={index} href={item.link} className={styles['footerLinks']}>
-                {item.text}
-              </Link>
-            ))}
+          <Typography sx={sxStyles.footerListHeader}>
+	          {t('contact_us')}
+					</Typography>
+          <Box sx={sxStyles.footerList}>
+	          <Link href='tel:380970686901%20' sx={sxStyles.listLink}>
+		          +380 97 068 6901
+	          </Link>
+	          <Link href='mailto:info@invictusmedical.com.ua' sx={sxStyles.listLink}>
+		          info@invictusmedical.com.ua
+	          </Link>
+	          <Link href={`/${locale}/contact-us`} sx={sxStyles.listLink}>
+		          {t('send_message')}
+	          </Link>
+	          <Link href='https://maps.app.goo.gl/wA6pe6UL5N4j8TWa6' sx={sxStyles.listLink}>
+		          {t('address')}
+	          </Link>
           </Box>
         </Box>
         <Box>
-          <Typography sx={sxStyles.linksListHeader}>Наші соцмережі</Typography>
-          <Box sx={sxStyles.linksList}>
+          <Typography
+	          sx={mergeSx(sxStyles.footerListHeader, {display: {mobile: 'none', mobileSemiMedium: 'block'}})}
+          >
+	          {t('social_networks')}
+					</Typography>
+          <Box sx={sxStyles.footerList}>
             {socialNetworksLinks.map((item, index) => (
-              <Link key={index} href={item.link} className={styles['footerLinks']}>
-                <Box sx={sxStyles.socialNetIcons}>{item.icon}</Box>
-                {item.text}
-              </Link>
+	            <Link key={index} href={item.link} sx={sxStyles.listLink}>
+		            <Box sx={sxStyles.socialNetIcon}>{item.icon}</Box>
+		            <Typography sx={sxStyles.socialNetLinkText}>
+			            {item.text}
+		            </Typography>
+	            </Link>
             ))}
           </Box>
         </Box>

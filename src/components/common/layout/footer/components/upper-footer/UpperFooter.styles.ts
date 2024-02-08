@@ -23,13 +23,18 @@ export const upperFooter: SxProps<Theme> = {
 export const footerLists: SxProps<Theme> = {
   display: 'flex',
   justifyContent: 'space-between',
+	alignItems: {
+		mobile: 'center',
+		mobileSemiMedium: 'flex-start',
+	},
   gap: {
     mobile: '50px',
+	  tablet: '150px',
     desktop: '200px',
   },
 }
 
-export const linksListHeader: SxProps<Theme> = {
+export const footerListHeader: SxProps<Theme> = {
   fontSize: {
     mobile: '15px',
     desktop: '18px',
@@ -38,7 +43,7 @@ export const linksListHeader: SxProps<Theme> = {
   pb: '14px',
 }
 
-export const linksList: SxProps<Theme> = {
+export const footerList: SxProps<Theme> = {
   fontSize: {
     mobile: '12px',
     desktop: '14px',
@@ -53,10 +58,37 @@ export const linksList: SxProps<Theme> = {
   },
 }
 
-export const socialNetIcons: SxProps<Theme> = {
+export const listLink: SxProps<Theme> = {
+	color: 'white',
+	display: 'flex',
+	alignItems: 'center',
+	gap: '8px',
+	textDecoration: 'none',
+	'&:hover': {
+		textDecoration: 'underline'
+	},
+	fontSize: {
+		mobile: '12px',
+		desktop: '14px',
+	},
+	typography: 'body2'
+}
+
+export const socialNetIcon: SxProps<Theme> = {
   height: '16px',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   overflow: 'hidden',
+}
+
+export const socialNetLinkText: SxProps<Theme> = {
+	display: {
+		mobile: 'none',
+		mobileSemiMedium: 'inline'
+	},
+	fontSize: {
+		mobile: '12px',
+		desktop: '14px',
+	},
 }

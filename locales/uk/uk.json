@@ -1,0 +1,43 @@
+{
+  "navigation": {
+    "header": {
+      "main": "Головна",
+      "about_us": "Про нас",
+      "hands": "Руки",
+      "services": "Послуги",
+      "contact_us": "Зв'яжіться з нами"
+    },
+    "footer": {
+      "contact_us": "Зв'яжіться з нами",
+      "send_message": "Надішліть нам повідомлення",
+      "address": "Україна, Київ, 04073, проспект Степана Бандери, 23, кімната 202",
+      "social_networks": "Наші соцмережі",
+      "privacy_policy": "Політика конфіденційності",
+      "terms_and_conditions": "Умови та положення"
+    }
+  },
+
+  "pages": {
+    "main": {
+
+    },
+    "about_us": {
+
+    },
+    "hands": {
+
+    },
+    "hand_system_types": {
+
+    },
+    "services": {
+
+    },
+    "faq": {
+
+    },
+    "contact_us": {
+
+    }
+  }
+}

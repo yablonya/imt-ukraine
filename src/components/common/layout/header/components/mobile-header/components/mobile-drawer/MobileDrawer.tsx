@@ -1,9 +1,17 @@
 import {Box, Drawer } from "@mui/material";
-import * as styles from './MobileDrawer.styles';
 import Tab from "@/components/common/ui/tab/Tab";
-import Link from "next/link";
-import { mainLinks } from "../../../../constants";
 import { FC } from "react";
+import {useLocale, useTranslations} from "next-intl";
+import {
+	ChatBubbleBottomCenterTextIcon,
+	ChatBubbleLeftRightIcon,
+	Cog8ToothIcon,
+	HandRaisedIcon,
+	HomeIcon,
+	QuestionMarkCircleIcon
+} from "@heroicons/react/24/outline";
+
+import * as styles from './MobileDrawer.styles';
 
 
 interface MobileDrawerProps {
@@ -12,6 +20,9 @@ interface MobileDrawerProps {
 }
 
 const MobileDrawer: FC<MobileDrawerProps> = ({drawerState, toggleDrawer}) => {
+	const t = useTranslations('navigation.header');
+	const locale = useLocale();
+
   return (
     <Drawer
       anchor="top"
@@ -19,11 +30,42 @@ const MobileDrawer: FC<MobileDrawerProps> = ({drawerState, toggleDrawer}) => {
       onClose={toggleDrawer}
     >
       <Box sx={styles.tabList}>
-        {mainLinks.map((item, index) => (
-          <Link key={index} href={item.link} onClick={toggleDrawer}>
-            <Tab startIcon={item.icon} label={item.label} link={item.link}/>
-          </Link>
-        ))}
+	      <Tab
+		      startIcon={<HomeIcon/>}
+		      label={t('main')}
+		      link={`/${locale}`}
+		      onClick={toggleDrawer}
+	      />
+	      <Tab
+		      startIcon={<ChatBubbleBottomCenterTextIcon/>}
+		      label={t('about_us')}
+		      link={`/${locale}/about-us`}
+		      onClick={toggleDrawer}
+	      />
+	      <Tab
+		      startIcon={<HandRaisedIcon/>}
+		      label={t('hands')}
+		      link={`/${locale}/hands`}
+		      onClick={toggleDrawer}
+	      />
+	      <Tab
+		      startIcon={<Cog8ToothIcon/>}
+		      label={t('services')}
+		      link={`/${locale}/services`}
+		      onClick={toggleDrawer}
+	      />
+	      <Tab
+		      startIcon={<QuestionMarkCircleIcon/>}
+		      label='FAQ'
+		      link={`/${locale}/faq`}
+		      onClick={toggleDrawer}
+	      />
+	      <Tab
+		      startIcon={<ChatBubbleLeftRightIcon/>}
+		      label={t('contact_us')}
+		      link={`/${locale}/contact-us`}
+		      onClick={toggleDrawer}
+	      />
       </Box>
     </Drawer>
   );

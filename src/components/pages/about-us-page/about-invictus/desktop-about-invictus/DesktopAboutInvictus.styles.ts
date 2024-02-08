@@ -1,7 +1,10 @@
 import {SxProps, Theme} from "@mui/system";
 
 export const aboutInvictusBlock: SxProps<Theme> = {
-	display: 'flex',
+	display: {
+		mobile: 'none',
+		desktopSemiMedium: 'flex',
+	},
 	gap: '60px',
 	margin: '60px 50px 60px',
 }

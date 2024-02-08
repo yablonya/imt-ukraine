@@ -1,9 +1,8 @@
 'use client';
 
-import {Box, List, ListItem, ListItemIcon, Typography, useMediaQuery} from "@mui/material";
+import {Box, List, ListItem, ListItemIcon, Typography} from "@mui/material";
 import Image from 'next/image';
 import DesktopVHPBlock from "./vhp-block/desktop-vhp-block/DesktopVHPBlock";
-import theme from "@/styles/theme/theme";
 import MobileVHPBlock from "./vhp-block/mobile-vhp-block/MobileVHPBlock";
 import aboutFirstHand from '../../../../public/images/about-first-hand.jpg';
 import {CheckCircleIcon} from "@heroicons/react/24/outline";
@@ -13,19 +12,15 @@ import MobileAboutInvictus from "./about-invictus/mobile-about-invictus/MobileAb
 
 import * as sxStyles from './AboutUsPage.styles';
 import styles from './AboutUsPage.module.scss'
+import {useTranslations} from "next-intl";
 
 const AboutUsPage = () => {
-  const isMobile = useMediaQuery(theme.breakpoints.down('desktopSemiMedium'));
-
   return (
     <>
 	    <DesktopVHPBlock/>
 	    <MobileVHPBlock/>
       <Box sx={sxStyles.technologyBlock}>
         <Box sx={sxStyles.technologyTextContent}>
-	        <Typography variant='h3' sx={sxStyles.technologyHeader}>
-		        Технологія проекту Victoria Hand
-	        </Typography>
 	        <Typography sx={sxStyles.technologyText}>
 		        3D-друк дозволяє друкувати деталі для протезів рук на вимогу на місці в країні. 3D-сканування
 		        використовується для захоплення унікальної форми кінцівки людини, для 3D-друку та гнізда кінцівки, яка
@@ -64,11 +59,8 @@ const AboutUsPage = () => {
 			    ))}
 		    </List>
 	    </Box>
-	    {!isMobile ? (
-		    <DesktopAboutInvictus/>
-	    ) : (
-		    <MobileAboutInvictus/>
-	    )}
+	    <DesktopAboutInvictus/>
+	    <MobileAboutInvictus/>
     </>
   );
 };

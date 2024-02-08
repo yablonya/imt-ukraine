@@ -20,7 +20,7 @@ export const logoLink: SxProps<Theme> = {
 
 export const rightBlock: SxProps<Theme> = {
   display: 'flex',
-  gap: '18px',
+  gap: '14px',
   alignItems: 'center',
 };
 

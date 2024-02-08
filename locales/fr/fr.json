@@ -1,0 +1,43 @@
+{
+  "navigation": {
+    "header": {
+      "main": "Accueil",
+      "about_us": "A propos de nous",
+      "hands": "Mains",
+      "services": "Services",
+      "contact_us": "Contactez nous"
+    },
+    "footer": {
+      "contact_us": "Contactez nous",
+      "send_message": "Envoyer un message",
+      "address": "23, Stepanera Avenue, Kyiv, 04073, Ukraine, bureau 202",
+      "social_networks": "Nos réseaux sociaux",
+      "privacy_policy": "Politique de confidentialité",
+      "terms_and_conditions": "Conditions d'utilisation"
+    }
+  },
+
+  "pages": {
+    "main": {
+
+    },
+    "about_us": {
+
+    },
+    "hands": {
+
+    },
+    "hand_system_types": {
+
+    },
+    "services": {
+
+    },
+    "faq": {
+
+    },
+    "contact_us": {
+
+    }
+  }
+}

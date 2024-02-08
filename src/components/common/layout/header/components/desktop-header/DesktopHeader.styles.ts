@@ -25,15 +25,3 @@ export const link = (currentPage: string, pageLink: string): SxProps<Theme> => (
   textDecoration: currentPage === pageLink ? 'underline #3D8361' : 'none',
   textUnderlineOffset: '6px',
 });
-
-export const changeLang: SxProps<Theme> = {
-  display: 'flex',
-  gap: '7px',
-  alignItems: 'center',
-};
-
-export const langIcon: SxProps<Theme> = {
-  borderRadius: '4px',
-  overflow: 'hidden',
-  height: '20px',
-};
