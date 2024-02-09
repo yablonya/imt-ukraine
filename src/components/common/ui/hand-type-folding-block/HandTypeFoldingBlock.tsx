@@ -8,7 +8,7 @@ import useWindowWidth from "@/hooks/use-window-width/useWindowWidth";
 
 interface HandTypeFoldingBlockProps {
 	title: string,
-	mainText: string | ReactNode,
+	mainText: string,
 	openedBlock: string,
 	setOpenedBlock: Dispatch<SetStateAction<string>>,
 }

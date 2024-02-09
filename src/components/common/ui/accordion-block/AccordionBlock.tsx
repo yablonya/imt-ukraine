@@ -13,7 +13,7 @@ import {ChevronDownIcon} from "@heroicons/react/24/outline";
 
 interface AccordionBlockProps {
 	headerText: string;
-	mainText: string | ReactNode;
+	mainText: string;
 }
 
 const AccordionBlock: FC<AccordionBlockProps> = ({headerText, mainText, ...rest}) => {
@@ -40,9 +40,9 @@ const AccordionBlock: FC<AccordionBlockProps> = ({headerText, mainText, ...rest}
 				</Typography>
 			</AccordionSummary>
 			<AccordionDetails>
-				<Box sx={styles.accordionMainText}>
+				<Typography sx={styles.accordionMainText}>
 					{mainText}
-				</Box>
+				</Typography>
 			</AccordionDetails>
 		</Accordion>
 	);

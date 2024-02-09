@@ -37,7 +37,8 @@ export const textPartHeader: SxProps<Theme> = {
 }
 
 export const textPartContent: SxProps<Theme> = {
-  typography: {
+	whiteSpace: 'pre-line',
+	typography: {
     desktopSemiMedium: 'body2',
     desktopMedium: 'body1',
   },

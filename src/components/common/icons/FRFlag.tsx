@@ -1,15 +1,14 @@
 export const FRFlag = () => (
-	<svg width="27" height="18" viewBox="0 0 513 343" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<svg width="27" height="18" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<g>
-			<path d="M0 0.925293H513V342.929H0V0.925293Z" fill="white"/>
-			<path d="M0 0.925293H170.996V342.929H0V0.925293Z" fill="#0052B4"/>
-			<path d="M342.004 0.925293H513V342.929H342.004V0.925293Z" fill="#D80027"/>
+			<path d="M0 -1.12497H27V19.125H0V-1.12497Z" fill="white"/>
+			<path d="M0 -1.12497H8.99859V19.125H0V-1.12497Z" fill="#00267F"/>
+			<path d="M18.0015 -1.12497H27.0001V19.125H18.0015V-1.12497Z" fill="#F31830"/>
 		</g>
 		<defs>
-			<clipPath id="clip0_301_1221">
-				<rect width="513" height="342" fill="white" transform="translate(0 0.927246)"/>
+			<clipPath id="clip0_224_1546">
+				<rect width="27" height="18" fill="white"/>
 			</clipPath>
 		</defs>
 	</svg>
-
 );

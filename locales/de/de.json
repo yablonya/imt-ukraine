@@ -1,4 +1,9 @@
 {
+  "common": {
+    "text_block_btn_show": "Lesen Sie mehr...",
+    "text_block_btn_hide": "Ausblenden"
+  },
+
   "navigation": {
     "header": {
       "main": "Startseite",
@@ -19,25 +24,94 @@
 
   "pages": {
     "main": {
-
+      "text": "Invictus Medical Technologies Ukraine (IMTU) stellt mithilfe der vom Victoria Hand Project (Kanada) entwickelten 3D-Drucktechnologie hochwertige funktionelle Handprothesen für Amputierte und klinische Partner her. Eine funktionelle Handprothese ist ein unglaubliches Hilfsmittel, das Menschen mit amputierten oberen Gliedmaßen dabei hilft, Unabhängigkeit, Hoffnung und die Fähigkeit zu einem erfüllteren und glücklicheren Leben wiederzuerlangen.\n\nWir bieten einen zeitnahen Nachgarantieservice und die Reparatur von VHP-Systemen.\n\nAußerdem organisieren wir Hightech-Schulungen für lokale Gesundheitsdienstleister und stellen 3D-Drucker, Teile und Materialien für die Herstellung von Victoria-Hand-Prothesen zur Verfügung.",
+      "title_media": "Wir tun unser Bestes für Ihr Glück"
     },
     "about_us": {
-
+      "vhp": {
+        "before_list": "Das Victoria Hand Project (VHP) ist eine kanadische Non-Profit-Organisation, die im Juli 2015 in Victoria, British Columbia, mit dem Ziel gegründet wurde, Amputierten in Entwicklungsländern, die nur begrenzten oder gar keinen Zugang zu Prothesen haben, Prothesen für die oberen Gliedmaßen zur Verfügung zu stellen. VHP hat das Victoria Hand System entwickelt, eine Reihe künstlicher Gliedmaßen, die es Amputierten ermöglichen, Aufgaben im Haushalt und bei der Arbeit zu erledigen und ihre Lebensqualität zu verbessern.\n\nDer Ansatz von VHP hat drei Hauptmerkmale:\n\n",
+        "first_item": "Einrichtung eines Produktionszentrums und Ausbildung von Personal, das vor Ort in Ländern mit niedrigem Lebensstandard an der Herstellung von 3D-gedruckten Prothesen beteiligt ist.",
+        "second_item": "Ausbildung und Zusammenarbeit mit klinischem und medizinischem Fachpersonal, um Menschen mit Amputationen professionell zu versorgen.",
+        "third_item": "Laufende Betriebsunterstützung für das Produktionszentrum und das Netz der klinischen Dienste.\n\n",
+        "after_list": "Die Versorgung mit einer Handprothese von VHP verändert das Leben der Patienten. Funktionelle Handprothesen sind ein unglaubliches Hilfsmittel, das Amputierten hilft, Unabhängigkeit, Hoffnung und die Fähigkeit, ein erfülltes und glückliches Leben zu führen, wiederzuerlangen.\n\nDas Victoria Hand Projekt hat inzwischen Partnerschaften in 12 Ländern aufgebaut - Kanada, den Vereinigten Staaten, Nepal, Kambodscha, Guatemala, Ecuador, Haiti, Ägypten, Uganda, Kenia, Pakistan und seit kurzem auch in der Ukraine. Bis heute haben weltweit mehr als 300 Amputierte Victoria-Hand-Prothesen erhalten, und mehr als 50 Kliniker wurden in der Anwendung dieser 3D-Technologie geschult.\n\nIm Jahr 2022 stellte VHP fest, dass ein dringender Bedarf an Prothesen für ukrainische Bürger besteht, die während des anhaltenden Krieges mit den Streitkräften der Russischen Föderation verletzt worden waren.\n\nIm Jahr 2022 begann das VHP-Team mit der Spendensammlung, um das Projekt durch die Initiative Hände für die Ukraine zu erweitern. Dank der eingegangenen Spenden führte VHP im Februar 2023 ein Pilotprojekt mit zwei Prothesenkliniken in Lemberg und Winnyzja durch, in dessen Rahmen Ärzte und Prothesenspezialisten geschult wurden und der große Bedarf an Versorgung erkannt wurde. Nach einer erfolgreichen Spendensammlung kehrte das VHP-Team im Juni 2023 in die Ukraine zurück, um eine gründliche Schulung durchzuführen und diese Partnerschaften abzuschließen, damit die Kliniken Victoria Hand-Prothesen dauerhaft anbieten können. VHP hat die notwendigen Ressourcen bereitgestellt, darunter 3D-Drucker, 3D-Scanner, Computer, Werkzeugsätze, Materialien und Befestigungselemente, die für die Herstellung der Handprothesen benötigt werden.\n\nIm Oktober 2023 weitete das Victoria Hand Project seine Präsenz in Kiew aus, indem es eine Partnerschaft mit Invictus Medical Technologies Ukraine (IMTU) und dem Kyiv State Experimental Prosthetic and Orthopaedic Enterprise einging."
+      },
+      "technology_title": "Victoria Hand Projekt Technologien",
+      "technology_text": "Der 3D-Druck ermöglicht den Druck von Teilen für Handprothesen bei Bedarf vor Ort im Land. Mithilfe von 3D-Scans wird die einzigartige Form der Gliedmaße einer Person erfasst, um eine Gliedmaße in 3D zu drucken und mit einem Sockel zu versehen, der vollständig auf den jeweiligen Benutzer zugeschnitten ist. Victorias Hand ist ein komplettes Prothesensystem, das eine Hand, eine Handgelenkeinheit, einen speziellen Sockel für den Unterarm und ein Gurtzeug zur Betätigung des Geräts umfasst. \n\nZusätzlich zu den mit einem 3D-Drucker gedruckten Kunststoffteilen werden bei diesem System Komponenten und Befestigungselemente aus rostfreiem Stahl verwendet, um das gesamte System stärker und haltbarer zu machen. Da es sich bei den meisten Teilen der Handprothese um Standardteile handelt, sind Reparatur und Wartung ein recht einfacher und unkomplizierter Prozess, was ein weiterer großer Vorteil des VHP-Systems ist.\n\nVHP ist in der Lage, transradiale Amputierte (Verlust unterhalb des Ellenbogens), transhumeral Amputierte (Verlust oberhalb des Ellenbogens) und Kinder mit transradialem Verlust zu versorgen. VHP hat auch eine gemeinnützige US-Firma namens LimbForge Technologies übernommen, die 3D-gedruckte kosmetische Arme herstellt.",
+      "features": {
+        "title": "Merkmale des Victoria-Hand-Systems",
+        "list_header": "Das System Victoria Hand weist mehrere wichtige Merkmale auf:",
+        "first": "Mit dem 3D-Druck können alle Kunststoffteile bei Bedarf vor Ort im Land gedruckt werden, wobei hochwertiges PLA-Filament von BASF/Forward AM verwendet wird. Dieses Material ist biologisch abbaubar und für einen längeren Kontakt mit der menschlichen Haut zertifiziert.",
+        "second": "Das VHP-System verwendet Komponenten und Befestigungselemente aus Edelstahl, um das gesamte System stabiler und haltbarer zu machen.",
+        "third": "Mithilfe von 3D-Scans lässt sich der Schaft vollständig an die Bedürfnisse jedes einzelnen Amputierten/Benutzers anpassen.",
+        "fourth": "Die Hand hat ein Handgelenk mit Kugelgelenk, das in verschiedenen Positionen ausgerichtet und fixiert werden kann.",
+        "fifth": "Jede Hand hat fünf anpassungsfähige Greiffinger und kann viele verschiedene Formen von Gegenständen greifen.",
+        "sixth": "Jede Hand hat weiche Silikon-Fingerspitzen, die helfen, Gegenstände zu halten, ohne abzurutschen.",
+        "seventh": "Die Hand verfügt über einen schwenkbaren Daumen, mit dem sich verschiedene Gegenstände sicherer greifen lassen.",
+        "eighth": "Die Hand kann optional mit einem hautfarbenen Anstrich versehen werden.",
+        "ninth": "Im Falle einer Reparatur oder Wartung können alle Teile mit einem 3D-Drucker neu gedruckt werden, was dieses System sehr flexibel, kostengünstig und wartungsfreundlich macht."
+      },
+      "about_imtu_title": "Über Invictus Medical Technologies Ukraine",
+      "about_imtu_text": "Invictus Medical Technologies Ukraine, ein privates Unternehmen, wurde im Oktober 2023 von Dmytro Minenko gegründet, einem in der Ukraine geborenen, jetzt aber kanadischen Staatsbürger mit ständigem Wohnsitz in Langley, British Columbia, wo er in den letzten 22 Jahren in der digitalen Marketingbranche gearbeitet hat. \n\nHerr Minenko leistet seit 2014, als die Halbinsel Krim und Teile der Ostukraine von den russischen Streitkräften besetzt wurden, umfangreiche ehrenamtliche Arbeit zur Unterstützung der ukrainischen Streitkräfte. \n\nHerr Minenko half der ersten Gruppe ukrainischer Veteranen, die während des Konflikts in der Ostukraine in den Jahren 2014-2015 Gliedmaßen verloren hatten und nach Kanada kamen, um prothetische Hilfe zu erhalten. Er beteiligte sich auch an der finanziellen Unterstützung ihrer Familien im Rahmen der Initiative der Maple Hope Canada Foundation. \n\nIm Jahr 2022 begann Dmytro Minenko mit dem Victoria Hand Project zusammenzuarbeiten, um das Team bei den Reiseplänen in die Ukraine zu unterstützen, Schulungen für ukrainische Ärzte und Prothesenspezialisten zu organisieren und das Bewusstsein für diese Technologie zu schärfen. \n\nIm September 2023 reiste Dmytro Minenko für eine Woche nach Victoria, um sich im Labor des Victoria Hand Project in der Herstellung von Prothesenkomponenten mit Hilfe der 3D-Drucktechnologie, deren Montage und Wartung schulen zu lassen. Eine ganze Woche lang arbeitete er mit den Mitarbeitern des VHP zusammen, die ihm alle Einzelheiten dieses Geschäfts beibrachten, das nicht nur Erfahrung mit 3D-Druckern und 3D-Designsoftware erfordert, sondern auch mit dem sorgfältigen Zusammenbau mechanischer Prothesenteile, um sie funktionell, stark und haltbar zu machen.\n\nIm Oktober 2023, nachdem er sein VHP-Zertifikat erhalten hatte, reiste Dmytro Minenko nach Kiew, Ukraine, und meldete ein privates Unternehmen, Invictus Medical Technologies Ukraine (IMTU), an, um die Produktion von Handprothesen mit der vom Victoria Hand Project entwickelten 3D-Drucktechnologie aufzunehmen. Er brachte die ersten drei 3D-Drucker und einen 3D-Scanner sowie die für die Produktion benötigten Werkzeuge, Teile und Materialien mit, eröffnete das IMTU-Büro und schulte eine Gruppe von Technikern. \n\nDas IMTU arbeitet eng mit dem Forschungsinstitut für fortgeschrittene Verteidigungstechnologien (RIDT) zusammen, das am Igor Sikorsky Kyiv Polytechnic Institute angesiedelt ist. Einer der Arbeitsbereiche dieses Instituts sind moderne Prothesentechnologien, und das IMTU hat eine formelle Partnerschaft mit dem NIADT geschlossen, um gemeinsam moderne Prothesentechnologien in der Ukraine einzuführen und umzusetzen."
     },
     "hands": {
-
+      "hand_types_title": "VHP Hand System Typen",
+      "hand_types": "Freiwillig geschlossene Hand (VC Hand)\nFreiwillig offene Hand (VO Hand)\nKleine Hand\nLimbForge-Arm\nUnterstützende Add-Ons",
+      "hand_types_link": "Lesen Sie mehr...",
+      "add_ons_title": "Unterstützende Add-Ons",
+      "add_ons_text": "Invictus Medical bietet eine Vielzahl von 3D-gedruckten Hilfsmitteln an, die mit allen Versionen der Victoria Hand Systeme kompatibel sind und bei bestimmten Aufgaben wie Schreiben oder Essen helfen.",
+      "first_add_on_title": "Schreibunterstützungsgerät",
+      "first_add_on_text": "Dieses Gerät wurde entwickelt, um Ihnen das Halten und Benutzen Ihrer Schreibutensilien zu erleichtern. Es kann eine Reihe von kleinen Schreibutensilien aufnehmen und ist besonders nützlich für den Gebrauch in der Schule oder am Arbeitsplatz.",
+      "second_add_on_title": "Hilfsmittel für die Mahlzeit",
+      "second_add_on_text": "Mit diesem Gerät können Benutzer Besteck, wie z. B. eine Gabel oder einen Löffel, problemlos über einen längeren Zeitraum hinweg halten. Sie ist für verschiedene Besteckgrößen geeignet, und das Handgelenk kann gedreht werden, um das Besteck im gewünschten Winkel zu halten.",
+      "third_add_on_title": "Zusätzlicher Getränkehalter",
+      "third_add_on_text": "Diese Vorrichtung wurde entwickelt, um eine Standard-Getränkedose zu halten. Dies ist ideal, wenn der Benutzer ein Getränk über einen längeren Zeitraum halten muss, z. B. beim Essen oder beim Gehen."
     },
     "hand_system_types": {
-
+      "title": "VHP Hand System Typen",
+      "subtitle": "Wählen Sie eine Option",
+      "first_hand_title": "Freiwillig geschlossene Hand (VC Hand)",
+      "first_hand_text": "Das freiwillige Armverschlusssystem bleibt offen, bis der Benutzer die Schulter hebt, den Arm aktiviert und die Finger zusammendrückt.\n\nDieser Typ ist am beliebtesten bei Patienten, die ihre Vorliebe verloren haben, und ist für viele Nutzer die ideale Wahl, insbesondere für diejenigen, die gerade erst mit dem System begonnen haben.",
+      "second_hand_title": "Freiwillig offene Hand (VO Hand)",
+      "second_hand_text": "Neben der Voluntary Close Hand bietet Victoria Hand auch das Voluntary Open Hand System an, das offen bleibt, bis der Benutzer die Schulter anhebt, die Hand aktiviert und die Finger zusammendrückt.\n\nDieser Typ erfüllt die Bedürfnisse von Amputierten, die zuvor eine Hakenprothese verwendet haben, oder von Menschen, die an einem besseren, stärkeren Griff interessiert sind.",
+      "third_hand_title": "Kleine Hand",
+      "third_hand_text": "Das Small Hand System ist eine kleinere Version des Voluntary Close Hand Systems, die für Kinder oder Benutzer mit kleinen Händen optimiert ist. Zusätzlich zur Innenfingerkonstruktion aus Edelstahl verfügt die Small Hand über einen Daumen aus Edelstahl, der die Hand haltbar macht.",
+      "fourth_hand_title": "LimbForge-Arm",
+      "fourth_hand_text": "Die LimbForge Hand ist eine kosmetische, ultraleichte Prothesenhand, die mit einem 3D-Drucker hergestellt wird. Die Hand kann so skaliert werden, dass sie perfekt zur Körpergröße des Empfängers passt.",
+      "fifth_hand_title": "Unterstützende Add-Ons",
+      "fifth_hand_text": "Invictus Medical bietet auch eine Reihe von unterstützenden Anwendungen an. Diese 3D-gedruckten Geräte können von Victoria Hands-Systemen gehalten werden, um bestimmte Aufgaben zu erleichtern und den Amputierten mehr Komfort und Unabhängigkeit zu bieten."
     },
     "services": {
-
+      "title": "Dienstleistungen",
+      "text": "Neben der Herstellung von VHP-Prothesen bieten wir auch die Anpassung und Schulung der Benutzer in der Verwendung und Pflege ihrer Handprothesen an.\n\nWir bieten auch Schulungen für lokale Gesundheitsdienstleister an, die an einer Zusammenarbeit mit IMTU als klinischem Partner interessiert sind. Wir unterrichten Sie in der Durchführung von 3D-Scans des Stumpfes, der endgültigen Anpassung, der Patientenaufklärung und der Rehabilitation. Wir können unseren klinischen Partnern auch einen ldolo3D-Scanner, Computer, Werkzeuge und Ersatzteile für die Wartung und Reparatur von Handprothesen zur Verfügung stellen."
     },
     "faq": {
-
+      "title": "Wir sind bereit, alle Ihre Fragen zu beantworten",
+      "first_question": "Wie erhalte ich eine Victoria-Hand-Prothese?",
+      "first_answer": "Wenn Sie sich für eine der VHP-Prothesen interessieren, müssen Sie zunächst einen Termin mit uns oder einem unserer klinischen Partner vereinbaren. Bei diesem ersten Termin wird Ihnen erklärt, wie das VHP-System funktioniert, welche Arten von Prothesen für Ihren Lebensstil am besten geeignet sind und welche funktionellen Einschränkungen Sie möglicherweise haben.\n\nUnsere zertifizierten Prothetikpartner arbeiten direkt mit jedem Empfänger zusammen, um Messungen vorzunehmen, Abdrücke zu nehmen, die Hand anzupassen und sie im Gebrauch ihrer neuen Hand zu schulen.",
+      "second_question": "Welche Garantie bieten Sie für VHP-Prothesen?",
+      "second_answer": "Wir bieten eine 1-jährige Garantie auf unsere Handprothesen.",
+      "third_question": "Welche Dienstleistungen und Reparaturen bieten Sie an?",
+      "third_answer": "Wir bieten jedem Prothesenempfänger fortlaufende technische Unterstützung und nutzen das Feedback von Anwendern und klinischem Fachpersonal, um die Technologie kontinuierlich weiterzuentwickeln. Auf diese Weise wird sichergestellt, dass Ihre Prothesenhand den Qualitätsservice erhält, den sie braucht, um lange Zeit richtig zu funktionieren. \n\nWenn etwas kaputt ist oder nicht richtig funktioniert, können wir mit unserer 3D-Technologie die kaputten Teile neu drucken und schnell und einfach ersetzen. Dies ist auch möglich, wenn Sie aus Ihrem Glied herausgewachsen sind. Unsere Handwerker führen alle notwendigen Reparaturen durch.",
+      "fourth_question": "Wie kann ich ein klinischer Partner werden?",
+      "fourth_answer": "Um klinischer Partner von IMTU zu werden, müssen Sie von IMTU für die Arbeit mit Patienten geschult werden und über 3D-Druck- und Scan-Ausrüstung sowie computergestützte Design-Software (CAD) verfügen, die es Ihnen ermöglicht, qualitativ hochwertige maßgeschneiderte Prothesen schneller, billiger und effizienter als je zuvor herzustellen.\n\nBitte kontaktieren Sie uns per E-Mail oder Telefon, um mehr über die Bedingungen der Zusammenarbeit zu erfahren."
     },
     "contact_us": {
-
+      "title": "Wir helfen Ihnen gerne weiter",
+      "phone_link": "Rufen Sie uns an",
+      "phone": "+380 97 068 6901",
+      "email_link": "Schreiben Sie uns",
+      "email": "info@invictusmedical.com.ua",
+      "address_link": "Unser Standort",
+      "address": "23, Stepanera Avenue, Kiew, 04073, Ukraine, Raum 202",
+      "message_title": "Hinterlassen Sie hier Ihre Nachricht",
+      "name_input": "Name",
+      "name_placeholder": "Schreiben Sie Ihren Namen",
+      "email_placeholder": "Schreiben Sie Ihre E-Mail",
+      "subject_input": "Betreff",
+      "subject_placeholder": "Einen Betreff schreiben",
+      "message_input": "Nachricht",
+      "message_placeholder": "Schreiben Sie Ihre Nachricht",
+      "send_button": "Senden Sie"
     }
   }
 }

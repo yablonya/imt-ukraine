@@ -7,12 +7,15 @@ import Link from "next/link";
 import AddOnCard from "./components/add-on-card/AddOnCard";
 import { addOnsDescriptions } from "./constants";
 import useDelay from "@/hooks/use-delay/useDelay";
+import {useLocale, useTranslations} from "next-intl";
 
 import * as sxStyles from './HandsPage.styles';
 import styles from './HandsPage.module.scss';
 
 const HandsPage = () => {
-	const checked = useDelay(800)
+	const checked = useDelay(800);
+	const t = useTranslations('pages.hands');
+	const locale = useLocale();
 
 	return (
 		<>
@@ -20,22 +23,14 @@ const HandsPage = () => {
 				<Image src={handSystem} alt='VHP Hand system image' className={styles.handSystem}/>
 				<Box sx={sxStyles.systemTypes(checked)}>
 					<Typography variant='h3' sx={sxStyles.systemTypesTitle}>
-						Типи ручної системи VHP
+						{t('hand_types_title')}
 					</Typography>
 					<Typography variant='h5' sx={sxStyles.systemTypesText}>
-						Добровільне закриття руки (VC Hand)
-						<br/>
-						Добровільна відкрита рука (VO Hand)
-						<br/>
-						Мала рука
-						<br/>
-						Рука LimbForge
-						<br/>
-						Допоміжні додатки
+						{t('hand_types')}
 					</Typography>
-					<Link href={"/hands/hand-system-types"}>
+					<Link href={`/${locale}/hands/hand-system-types`}>
 						<Typography variant='h5' sx={sxStyles.learnMoreLink}>
-							Ознайомитись...
+							{t('hand_types_link')}
 						</Typography>
 					</Link>
 				</Box>
@@ -43,11 +38,10 @@ const HandsPage = () => {
 			<Box sx={sxStyles.addOnsBlock}>
 				<Box>
 					<Typography variant='h2' sx={sxStyles.addOnsHeader}>
-						Допоміжні Додатки
+						{t('add_ons_title')}
 					</Typography>
 					<Typography variant='h5' sx={sxStyles.addOnsText}>
-						Invictus Medical пропонує різноманітні надруковані на 3D допоміжні пристрої, які сумісні з усіма версіями
-						систем Victoria Hand, щоб допомагати виконувати певні завдання, такі як письмо або їжа.
+						{t('add_ons_text')}
 					</Typography>
 				</Box>
 				<Box sx={sxStyles.addOnsCards}>
@@ -55,8 +49,8 @@ const HandsPage = () => {
 						<AddOnCard
 							key={index}
 							image={addOn.image}
-							title={addOn.title}
-							text={addOn.text}
+							title={t(addOn.title)}
+							text={t(addOn.text)}
 							cardColor={addOn.cardColor}
 						/>
 					))}

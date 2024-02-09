@@ -69,6 +69,7 @@ export const systemTypesTitle: SxProps<Theme> = {
 }
 
 export const systemTypesText: SxProps<Theme> = {
+	whiteSpace: 'pre-line',
 	padding: {
 		mobile: '15px 0',
 		mobileSemiMedium: '25px 0',

@@ -3,7 +3,8 @@
 import {FC, ReactNode, useState} from "react";
 import {Box, Typography} from "@mui/material";
 import {SxProps, Theme} from "@mui/system";
-import mergeSx from "@/lib/utils/MergeSxStylesUtil";
+import {useTranslations} from "next-intl";
+
 import * as styles from './FlexibleTextBlock.styles';
 
 interface FlexibleTextBlockProps {
@@ -12,7 +13,8 @@ interface FlexibleTextBlockProps {
 }
 
 const FlexibleTextBlock: FC<FlexibleTextBlockProps> = ({children, sx = {}}: FlexibleTextBlockProps) => {
-  const [isOpen, setIsOpen] = useState<boolean>(false)
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+	const t = useTranslations('common');
 
   const handleClick = () => {
     setIsOpen(!isOpen)
@@ -25,7 +27,7 @@ const FlexibleTextBlock: FC<FlexibleTextBlockProps> = ({children, sx = {}}: Flex
         <Box sx={styles.whiteOverlay(isOpen)}></Box>
       </Box>
       <Typography sx={styles.readMoreButton} onClick={handleClick}>
-        {isOpen ? 'Сховати' : 'Читати далі...'}
+        {isOpen ? t('text_block_btn_hide') : t('text_block_btn_show')}
       </Typography>
     </Box>
   );

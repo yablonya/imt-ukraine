@@ -11,11 +11,13 @@ import {useState} from "react";
 import {FormData} from '@/types/FormData';
 import {formValidator} from "@/lib/utils/ValidateForm";
 import sendEmailLetter from "@/lib/api";
+import {useTranslations} from "next-intl";
 
 import * as sxStyles from './ContactUsPage.styles'
 import styles from './ContactUsPage.module.scss'
 
 const ContactUsPage = () => {
+	const t = useTranslations('pages.contact_us');
 	const [sendingResult, setSendingResult] = useState({
 		isError: false,
 		message: ''
@@ -74,7 +76,7 @@ const ContactUsPage = () => {
 				/>
 				<Fade in={true} timeout={800}>
 					<Typography variant='h1' sx={sxStyles.handsArtText}>
-						Ми будемо раді вам допомогти
+						{t('title')}
 					</Typography>
 				</Fade>
 			</Box>
@@ -83,21 +85,21 @@ const ContactUsPage = () => {
 					<ContactLink
 						key={index}
 						icon={link.icon}
-						title={link.title}
-						text={link.message}
+						title={t(link.title)}
+						text={t(link.message)}
 						href={link.href}
 					/>
 				))}
 			</Box>
 			<Box sx={sxStyles.formBlock}>
 				<Typography variant='h4' sx={sxStyles.formBlockHeader}>
-					Залиште своє повідомлення тут
+					{t('message_title')}
 				</Typography>
 				<Box sx={sxStyles.formWithSticker}>
 					<Box sx={sxStyles.form}>
 						<Input
-							label="Ім'я"
-							placeHolder="Напишіть ваше ім'я"
+							label={t('name_input')}
+							placeHolder={t('name_placeholder')}
 							name='name'
 							value={formData.name}
 							data={formData}
@@ -106,8 +108,8 @@ const ContactUsPage = () => {
 							setIsTouched={setIsNameTouched}
 						/>
 						<Input
-							label="Email"
-							placeHolder="Напишіть ваш email"
+							label='Email'
+							placeHolder={t('email_placeholder')}
 							name='email'
 							type='email'
 							value={formData.email}
@@ -117,8 +119,8 @@ const ContactUsPage = () => {
 							setIsTouched={setIsEmailTouched}
 						/>
 						<Input
-							label="Тема"
-							placeHolder="Напишіть тему"
+							label={t('subject_input')}
+							placeHolder={t('subject_placeholder')}
 							name='subject'
 							value={formData.subject}
 							data={formData}
@@ -127,8 +129,8 @@ const ContactUsPage = () => {
 							setIsTouched={setIsSubTouched}
 						/>
 						<Input
-							label="Повідомлення"
-							placeHolder="Напишіть повідомлення"
+							label={t('message_input')}
+							placeHolder={t('message_placeholder')}
 							multiline={true}
 							rows={4}
 							name='message'
@@ -145,7 +147,7 @@ const ContactUsPage = () => {
 							 disabled={formValidator(formData)}
 							 onClick={handleSubmit}
 						 >
-							 Надіслати
+							 {t('send_button')}
 						 </Button>
 					</Box>
 					<Image src={writeSticker} alt='Sticker' className={styles.writeSticker}/>

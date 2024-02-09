@@ -40,6 +40,7 @@ export const technologyHeader: SxProps<Theme> = {
 }
 
 export const technologyText: SxProps<Theme> = {
+	whiteSpace: 'pre-line',
 	typography: {
 		mobile: 'body1',
 		tablet: 'body2',

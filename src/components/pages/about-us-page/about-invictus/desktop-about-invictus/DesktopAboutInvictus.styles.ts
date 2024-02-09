@@ -31,12 +31,12 @@ export const textBlockBorders: SxProps<Theme> = {
 }
 
 export const aboutInvictusText: SxProps<Theme> = {
+	whiteSpace: 'pre-line',
 	overflow: 'auto',
 	height: {
 		desktopSemiMedium: '300px',
 		desktopMedium: '400px',
 	},
-	typography: 'body1',
 	padding: '0 15px',
 	'&::-webkit-scrollbar-thumb': {
 		background: '#1C6758',

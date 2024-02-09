@@ -1,7 +1,7 @@
 import {SxProps, Theme} from "@mui/system";
 
 export const changeLangSelect: SxProps<Theme> = {
-
+	maxHeight: '51px',
 	'&:hover': {
 		backgroundColor: '#ededed',
 	},

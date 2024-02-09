@@ -1,55 +1,25 @@
+'use client'
+
 import FlexibleTextBlock from "@/components/common/ui/flexible-text-block/FlexibleTextBlock";
 import {Box, Typography} from "@mui/material";
 import aboutInvictus from "../../../../../../public/images/about-invictus.png";
-import styles from "@/components/pages/about-us-page/AboutUsPage.module.scss";
-import * as sxStyles from './MobileAboutInvictus.styles';
 import Image from "next/image";
+import {useTranslations} from "next-intl";
+
+import * as sxStyles from './MobileAboutInvictus.styles';
+import styles from "@/components/pages/about-us-page/AboutUsPage.module.scss";
 
 const MobileAboutInvictus = () => {
+	const t = useTranslations('pages.about_us');
+
 	return (
 		<Box sx={sxStyles.aboutInvictusBlock}>
 			<Image src={aboutInvictus} alt={'About IMTU image'} className={styles.aboutInvictus}/>
 			<Typography variant='h3' sx={sxStyles.aboutInvictusHeader}>
-				Про Інвіктус Медичні Технології Україна
+				{t('about_imtu_title')}
 			</Typography>
 			<FlexibleTextBlock sx={sxStyles.aboutInvictusText}>
-				Invictus Medical Technologies Ukraine була заснована в жовтні 2023 року паном Дмитром Міненком, який
-				народився в Україні, але зараз є громадянином Канади, який постійно проживає в Ленглі, Британська
-				Колумбія, де він працює в галузі цифрового маркетингу протягом останніх 22 років.
-				<br/>
-				<br/>
-				Пан Міненко проводить велику волонтерську роботу, підтримуючи Збройні сили України з 2014 року, коли
-				Кримський півострів і частини Східної України були окуповані російськими військами.
-				<br/>
-				<br/>
-				Пан Міненко допомагав першій групі українських ветеранів, які втратили кінцівки під час конфлікту на сході
-				України в 2014-2015 роках і приїхали до Канади, щоб отримати протезну допомогу. Він також брав участь у
-				фінансовій підтримці їхніх родин у рамках ініціативи Maple Hope Canada Foundation.
-				<br/>
-				<br/>
-				У 2022 році Дмитро Міненко почав співпрацювати з Victoria Hand Project, намагаючись допомогти їхній
-				команді з планами поїздок в Україну та організувати навчання для українських лікарів та спеціалістів у
-				галузі протезування та поширити знання про цю технологію.
-				<br/>
-				<br/>
-				У вересні 2023 року Дмитро на тиждень поїхав до Вікторії, щоб пройти навчання в лабораторії Victoria Hand
-				Project з виготовлення протезних комплектуючих за технологією 3D-друку, їх монтажу та обслуговування.
-				Цілий тиждень він працював із співробітниками VHP, які навчили його всім тонкощам цієї справи, яка
-				потребує досвіду не лише роботи з 3D-принтерами та програмами для 3D-дизайну, а й ретельного складання
-				механічних частин протезування, щоб вони були функціональними. , міцний і довговічний.
-				<br/>
-				<br/>
-				У жовтні 2023 року, отримавши сертифікат VHP, Дмитро Міненко поїхав до Києва, Україна, і зареєстрував
-				приватну компанію Invictus Medical Technologies Ukraine (IMTU) для запуску виробництва/виготовлення
-				протезів рук за технологією 3D-друку, розробленою Victoria Hand Project. Він привіз перші три 3D-принтери
-				та один 3D-сканер, інструменти, деталі та матеріали, необхідні для виробництва, відкрив офіс IMTU та
-				провів навчання для групи техніків.
-				<br/>
-				<br/>
-				ІМТУ тісно співпрацює з Науково-дослідним інститутом перспективних оборонних технологій (НДІАПТ), який
-				базується на базі КПІ ім. Ігоря Сікорського. Одним із напрямків роботи цього Інституту є сучасні
-				технології протезування, і ІМТУ встановив   офіційне партнерство з НДІАТД для об’єднання зусиль для
-				впровадження та впровадження сучасних технологій протезування в Україні.
+				{t('about_imtu_text')}
 			</FlexibleTextBlock>
 		</Box>
 	);

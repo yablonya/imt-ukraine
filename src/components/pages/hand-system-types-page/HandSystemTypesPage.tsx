@@ -9,6 +9,7 @@ import AccordionBlock from "@/components/common/ui/accordion-block/AccordionBloc
 import HandTypeFoldingBlock from "@/components/common/ui/hand-type-folding-block/HandTypeFoldingBlock";
 import {useEffect, useState} from "react";
 import useDelay from "@/hooks/use-delay/useDelay";
+import {useTranslations} from "next-intl";
 
 import * as sxStyles from './HandSystemTypesPage.styles'
 import styles from './HandSystemTypesPage.module.scss'
@@ -16,7 +17,8 @@ import styles from './HandSystemTypesPage.module.scss'
 const HandSystemTypesPage = () => {
 	const isMobile = useMediaQuery(theme.breakpoints.down('desktopMedium'));
 	const [openedBlock, setOpenedBlock] = useState('');
-	const checked = useDelay(800)
+	const checked = useDelay(800);
+	const t = useTranslations('pages.hand_system_types')
 
 	useEffect(() => {
 	}, [openedBlock]);
@@ -26,10 +28,10 @@ const HandSystemTypesPage = () => {
 			<Box sx={sxStyles.imageBlock(checked)}>
 				<Box sx={sxStyles.imageBlockText}>
 					<Typography variant='h1' sx={sxStyles.imageBlockTitle(checked)}>
-						Типи ручної системи VHP
+						{t('title')}
 					</Typography>
 					<Typography variant='h5' sx={sxStyles.imageBlockSubtitle}>
-						Оберіть варіант
+						{t('subtitle')}
 					</Typography>
 				</Box>
 				<Image src={handSystem2} alt={"Hand system image"} className={styles.handSystem}/>
@@ -39,14 +41,14 @@ const HandSystemTypesPage = () => {
 					isMobile ? (
 						<AccordionBlock
 							key={index}
-							headerText={desc.title}
-							mainText={desc.text}
+							headerText={t(desc.title)}
+							mainText={t(desc.text)}
 						/>
 					) : (
 						<HandTypeFoldingBlock
 							key={index}
-							title={desc.title}
-							mainText={desc.text}
+							title={t(desc.title)}
+							mainText={t(desc.text)}
 							openedBlock={openedBlock}
 							setOpenedBlock={setOpenedBlock}
 						/>

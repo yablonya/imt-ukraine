@@ -1,6 +1,7 @@
 import {SxProps, Theme} from "@mui/system";
 
 export const textBlock = (isOpen: boolean): SxProps<Theme> => ({
+	whiteSpace: 'pre-line',
   position: 'relative',
   height: isOpen ? 'auto' : '600px',
   overflow: isOpen ? 'visible' : 'hidden',
