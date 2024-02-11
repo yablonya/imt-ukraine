@@ -7,7 +7,7 @@ import theme from "@/styles/theme/theme";
 import {handSystemsDescriptions} from "./constants";
 import AccordionBlock from "@/components/common/ui/accordion-block/AccordionBlock";
 import HandTypeFoldingBlock from "@/components/common/ui/hand-type-folding-block/HandTypeFoldingBlock";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import useDelay from "@/hooks/use-delay/useDelay";
 import {useTranslations} from "next-intl";
 
@@ -15,13 +15,12 @@ import * as sxStyles from './HandSystemTypesPage.styles'
 import styles from './HandSystemTypesPage.module.scss'
 
 const HandSystemTypesPage = () => {
+	const [openedBlock, setOpenedBlock] = useState({
+		blockLabel: ''
+	});
 	const isMobile = useMediaQuery(theme.breakpoints.down('desktopMedium'));
-	const [openedBlock, setOpenedBlock] = useState('');
 	const checked = useDelay(800);
-	const t = useTranslations('pages.hand_system_types')
-
-	useEffect(() => {
-	}, [openedBlock]);
+	const t = useTranslations('pages.hand_system_types');
 
 	return (
 		<>

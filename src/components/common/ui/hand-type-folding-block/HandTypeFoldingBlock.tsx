@@ -1,6 +1,6 @@
 'use client'
 
-import {Dispatch, FC, ReactNode, SetStateAction, useEffect, useRef, useState} from "react";
+import {Dispatch, FC, SetStateAction, useEffect, useRef, useState} from "react";
 import {Accordion, AccordionDetails, AccordionSummary, Box, Typography} from "@mui/material";
 import * as styles from './HandTypeFoldingBlock.styles';
 import { XMarkIcon } from "@heroicons/react/24/outline";
@@ -9,8 +9,8 @@ import useWindowWidth from "@/hooks/use-window-width/useWindowWidth";
 interface HandTypeFoldingBlockProps {
 	title: string,
 	mainText: string,
-	openedBlock: string,
-	setOpenedBlock: Dispatch<SetStateAction<string>>,
+	openedBlock: { blockLabel: string },
+	setOpenedBlock: Dispatch<SetStateAction<{ blockLabel: string }>>,
 }
 
 const HandTypeFoldingBlock: FC<HandTypeFoldingBlockProps> = ({
@@ -20,12 +20,14 @@ const HandTypeFoldingBlock: FC<HandTypeFoldingBlockProps> = ({
 	setOpenedBlock,
 	...rest
 }) => {
+	const windowWidth = useWindowWidth();
 	const [isOpen, setIsOpen] = useState(false);
 	const [isDropped, setIsDropped] = useState(false);
 	const [isStretched, setIsStretched] = useState(false);
-	const blockRef = useRef<HTMLDivElement | null>(null);
 	const [leftDistance, setLeftDistance] = useState<number>(0);
-	const windowWidth = useWindowWidth();
+	const blockRef = useRef<HTMLDivElement | null>(null);
+	const openedBlockRef = useRef(openedBlock);
+	openedBlockRef.current = openedBlock;
 
 	useEffect(() => {
 		if (blockRef.current) {
@@ -34,35 +36,43 @@ const HandTypeFoldingBlock: FC<HandTypeFoldingBlockProps> = ({
 	}, [windowWidth, isOpen]);
 
 	useEffect(() => {
-		if (openedBlock !== title && openedBlock !== '') {
-			handleClose()
+		if (openedBlock.blockLabel && openedBlock.blockLabel !== title) {
+			handleClose();
 		}
 	}, [openedBlock]);
 
-
 	const handleOpen = () => {
-		if (openedBlock !== title && openedBlock !== '') {
-			setOpenedBlock(title)
+		if (openedBlock.blockLabel && openedBlock.blockLabel !== title) {
+			setOpenedBlock({...rest, blockLabel: title});
 			setTimeout(() => {
-				setIsOpen(true);
-				setTimeout(() => {
-					setIsDropped(true);
+				if (openedBlockRef.current.blockLabel === title) {
+					setIsOpen(true);
 					setTimeout(() => {
-						setIsStretched(true);
-					}, 350);
-				}, 500);
-			}, 800)
-		} else {
-			setOpenedBlock(title)
+						if (openedBlockRef.current.blockLabel === title) {
+							setIsDropped(true);
+							setTimeout(() => {
+								if (openedBlockRef.current.blockLabel === title) {
+									setIsStretched(true);
+								}
+							}, 350);
+						}
+					}, 500);
+				}
+			}, 600);
+		} else if (!openedBlock.blockLabel){
+			setOpenedBlock({...rest, blockLabel: title})
 			setIsOpen(true);
 			setTimeout(() => {
-				setIsDropped(true);
-				setTimeout(() => {
-					setIsStretched(true);
-				}, 350);
+				if (openedBlockRef.current.blockLabel === title) {
+					setIsDropped(true);
+					setTimeout(() => {
+						if (openedBlockRef.current.blockLabel === title) {
+							setIsStretched(true);
+						}
+					}, 350);
+				}
 			}, 500);
 		}
-
 	}
 
 	const handleClose = () => {
@@ -83,7 +93,7 @@ const HandTypeFoldingBlock: FC<HandTypeFoldingBlockProps> = ({
 				sx={styles.closingBlock}
 				onClick={() => {
 					handleClose();
-					setOpenedBlock('')
+					setOpenedBlock({...rest, blockLabel: ''})
 				}}
 			>
 				<XMarkIcon style={{width: '35px', color: '#3D8361'}}/>
