@@ -1,6 +1,10 @@
 import {SxProps, Theme} from "@mui/system";
 
 export const headerContainer: SxProps<Theme> = {
+	display: {
+		mobile: 'flex',
+		desktopSemiMedium: 'none'
+	},
   boxShadow: 'none',
   backgroundColor: 'white',
   color: 'black',

@@ -1,3 +1,5 @@
+'use client';
+
 import {AppBar, Link, Toolbar} from "@mui/material";
 import Image from 'next/image';
 import logoSmall from '../../../../../../../public/images/logo-small.png';
