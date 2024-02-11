@@ -31,6 +31,16 @@
   }
 }
 
+.handsFeatures {
+  height: 60vw;
+  width: auto;
+  max-height: 580px;
+  @media screen and (max-width: 1199px){
+    width: 100%;
+    height: auto;
+  }
+}
+
 .aboutInvictus {
   width: 50%;
   height: auto;

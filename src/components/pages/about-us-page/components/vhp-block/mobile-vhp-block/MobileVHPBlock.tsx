@@ -2,14 +2,14 @@
 
 import {Box, Fade, List, ListItem, ListItemIcon, Typography} from "@mui/material";
 import Image from "next/image";
-import countries from "../../../../../../public/images/countries.png";
+import countries from "../../../../../../../public/images/countries.png";
 import FlexibleTextBlock from "@/components/common/ui/flexible-text-block/FlexibleTextBlock";
 import {CircleOutlined} from "@mui/icons-material";
 import useDelay from "@/hooks/use-delay/useDelay";
 import {useTranslations} from "next-intl";
 
 import * as sxStyles from './MobileVHPBlock.styles';
-import styles from '../../AboutUsPage.module.scss';
+import styles from '../../../AboutUsPage.module.scss';
 
 const MobileVHPBlock = () => {
 	const checked = useDelay(800);

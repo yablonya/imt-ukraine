@@ -1,14 +1,14 @@
 'use client'
 
 import Image from "next/image";
-import countries from "../../../../../../public/images/countries.png";
+import countries from "../../../../../../../public/images/countries.png";
 import {Box, Fade, List, ListItem, ListItemIcon, Typography} from "@mui/material";
 import {CircleOutlined} from "@mui/icons-material";
 import useDelay from "@/hooks/use-delay/useDelay";
 import {useTranslations} from "next-intl";
 
 import * as sxStyles from './DesktopVHPBlock.styles'
-import styles from "../../AboutUsPage.module.scss";
+import styles from "../../../AboutUsPage.module.scss";
 
 const DesktopVHPBlock = () => {
 	const checked = useDelay(800)

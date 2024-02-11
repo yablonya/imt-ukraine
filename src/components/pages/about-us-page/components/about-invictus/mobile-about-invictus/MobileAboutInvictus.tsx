@@ -2,7 +2,7 @@
 
 import FlexibleTextBlock from "@/components/common/ui/flexible-text-block/FlexibleTextBlock";
 import {Box, Typography} from "@mui/material";
-import aboutInvictus from "../../../../../../public/images/about-invictus.png";
+import aboutInvictus from "../../../../../../../public/images/about-invictus.png";
 import Image from "next/image";
 import {useTranslations} from "next-intl";
 

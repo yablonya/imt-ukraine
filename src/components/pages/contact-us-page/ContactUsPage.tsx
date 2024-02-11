@@ -11,13 +11,14 @@ import {useState} from "react";
 import {FormData} from '@/types/FormData';
 import {formValidator} from "@/lib/utils/ValidateForm";
 import sendEmailLetter from "@/lib/api";
-import {useTranslations} from "next-intl";
+import {useLocale, useTranslations} from "next-intl";
 
 import * as sxStyles from './ContactUsPage.styles'
 import styles from './ContactUsPage.module.scss'
 
 const ContactUsPage = () => {
 	const t = useTranslations('pages.contact_us');
+	const locale = useLocale();
 	const [sendingResult, setSendingResult] = useState({
 		isError: false,
 		message: ''
@@ -38,7 +39,7 @@ const ContactUsPage = () => {
 
 	const handleSubmit = async () => {
 		try {
-			await sendEmailLetter(formData)
+			await sendEmailLetter(formData, locale)
 			setSendingResult({isError: false, message: 'Лист успішно відправлено'});
 			setFormData({
 				name: '',

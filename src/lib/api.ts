@@ -1,6 +1,6 @@
 import {FormData} from '@/types/FormData';
 
-const sendEmailLetter = async (data: FormData) => fetch('/api', {
+const sendEmailLetter = async (data: FormData, locale: string) => fetch(`/${locale}/api`, {
 	method: 'POST',
 	body: JSON.stringify(data),
 	headers: {

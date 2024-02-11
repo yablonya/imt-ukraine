@@ -1,12 +1,12 @@
 'use client';
 
 import Image from "next/image";
-import aboutInvictus from "../../../../../../public/images/about-invictus.png";
+import aboutInvictus from "../../../../../../../public/images/about-invictus.png";
 import {Box, Typography} from "@mui/material";
 import {useTranslations} from "next-intl";
 
 import * as sxStyles from './DesktopAboutInvictus.styles';
-import styles from '../../AboutUsPage.module.scss';
+import styles from '../../../AboutUsPage.module.scss';
 
 const DesktopAboutInvictus = () => {
 	const t = useTranslations('pages.about_us');
