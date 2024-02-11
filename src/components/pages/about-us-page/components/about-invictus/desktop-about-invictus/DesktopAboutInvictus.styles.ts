@@ -1,7 +1,10 @@
 import {SxProps, Theme} from "@mui/system";
 
 export const aboutInvictusBlock: SxProps<Theme> = {
-	display: 'flex',
+	display: {
+		mobile: 'none',
+		desktopSemiMedium: 'flex',
+	},
 	gap: '60px',
 	margin: '60px 50px 60px',
 }
@@ -28,12 +31,12 @@ export const textBlockBorders: SxProps<Theme> = {
 }
 
 export const aboutInvictusText: SxProps<Theme> = {
+	whiteSpace: 'pre-line',
 	overflow: 'auto',
 	height: {
 		desktopSemiMedium: '300px',
 		desktopMedium: '400px',
 	},
-	typography: 'body1',
 	padding: '0 15px',
 	'&::-webkit-scrollbar-thumb': {
 		background: '#1C6758',

@@ -24,5 +24,5 @@ export const accordionHeaderText: SxProps<Theme> = {
 
 export const accordionMainText: SxProps<Theme> = {
 	paddingTop: '5px',
-	typography: 'body1',
+	whiteSpace: 'pre-line',
 }

@@ -59,5 +59,6 @@ export const accordeonTitleText: SxProps<Theme> = {
 
 export const accordeonMainText: SxProps<Theme> = {
 	typography: 'body1',
+	whiteSpace: 'pre-line',
 	padding: '0px 25px 20px',
 };

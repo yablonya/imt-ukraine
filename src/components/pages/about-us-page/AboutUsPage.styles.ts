@@ -40,6 +40,7 @@ export const technologyHeader: SxProps<Theme> = {
 }
 
 export const technologyText: SxProps<Theme> = {
+	whiteSpace: 'pre-line',
 	typography: {
 		mobile: 'body1',
 		tablet: 'body2',
@@ -66,8 +67,17 @@ export const featuresHeader: SxProps<Theme> = {
 	}
 }
 
+export const imageFeatures: SxProps<Theme> = {
+	display: 'flex',
+	justifyContent: 'center',
+	padding: {
+		mobile: '0 0 20px',
+		desktopSemiMedium: '20px 0 40px',
+	}
+}
+
 export const listHeader: SxProps<Theme> = {
-	paddingleft: {
+	paddingLeft: {
 		mobile: 0,
 		mobileMedium: '30px',
 	}

@@ -46,6 +46,7 @@ export const textBorders: SxProps<Theme> = {
 };
 
 export const vhpContentText: SxProps<Theme> = {
+	whiteSpace: 'pre-line',
   typography: 'body1',
   height: 'auto',
   padding: '0 12px',

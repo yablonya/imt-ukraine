@@ -1,23 +1,25 @@
 'use client';
 
-import PageLayout from "@/components/common/layout/page-layout/PageLayout";
 import {Box, Fade, Typography, useMediaQuery} from "@mui/material";
+import {useTranslations} from "next-intl";
 import Image from 'next/image';
 import mainFirstImg from '../../../../public/images/main-first-img.jpg';
 import hand1 from '../../../../public/images/hand1.jpg';
 import hand2 from '../../../../public/images/hand2.jpg';
 import handsInBox from '../../../../public/images/hands-in-box.jpg';
 import printing from '../../../../public/images/printing.jpg';
-import * as sxStyles from './MainPage.styles';
-import styles from './MainPage.module.scss'
 import mergeSx from "@/lib/utils/MergeSxStylesUtil";
 import theme from "@/styles/theme/theme";
 
+import * as sxStyles from './MainPage.styles';
+import styles from './MainPage.module.scss'
+
 const MainPage = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('desktopSemiMedium'));
+	const t = useTranslations('pages.main');
 
   return (
-    <PageLayout>
+    <>
       <Fade in={true} timeout={800}>
 	      <Box sx={sxStyles.firstBlock}>
 		      <Image
@@ -27,20 +29,10 @@ const MainPage = () => {
 		      />
 		      <Box sx={sxStyles.textContainer}>
 			      <Typography variant='h3' sx={sxStyles.textPartHeader}>
-				      Інвіктус Медичні Технології Україна
+				      Invictus Medical Technologies Ukraine
 			      </Typography>
 			      <Typography sx={sxStyles.textPartContent}>
-				      Invictus Medical Technologies Ukraine (IMTU) виготовляє високоякісні функціональні протези рук за допомогою
-				      технології 3D-друку, розробленої Victoria Hand Project (Канада), для хворих з ампутованими кінцівками та для
-				      клінічних партнерів. Функціональні протези рук є неймовірним інструментом, який допомагає особам з
-				      ампутованими кінцівками відновити незалежність, надію та можливість жити більш насиченим і щасливішим життям.
-				      <br />
-				      <br />
-				      Ми своєчасно здійснюємо післягарантійне обслуговування та ремонт систем VHP.
-				      <br />
-				      <br />
-				      Ми також організовуємо високотехнологічне навчання для місцевих постачальників медичних послуг, надаємо
-				      обладнання для 3D-друку, деталі та матеріали, необхідні для виготовлення протезів Victoria Hand.
+				      {t('text')}
 			      </Typography>
 		      </Box>
 	      </Box>
@@ -48,7 +40,7 @@ const MainPage = () => {
       <Fade in={true} timeout={2400}>
 	      <Box sx={sxStyles.mediaBlock}>
 		      <Typography variant='h3' sx={sxStyles.mediaBlockHeader}>
-			      Ми робимо все можливе для вашого щастя
+			      {t('title_media')}
 		      </Typography>
 		      <Box sx={sxStyles.media}>
 			      <Box sx={sxStyles.imageContainer}>
@@ -96,7 +88,7 @@ const MainPage = () => {
 		      </Box>
 	      </Box>
       </Fade>
-    </PageLayout>
+    </>
   );
 };
 

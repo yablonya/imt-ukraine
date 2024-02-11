@@ -1,17 +1,22 @@
 import {Box, Typography} from "@mui/material";
+import Link from "next/link";
+import {useLocale, useTranslations} from "next-intl";
+
 import * as sxStyles from './LowerFooter.styles'
 import styles from '../../Footer.module.scss';
-import Link from "next/link";
 
 const LowerFooter = () => {
+	const t = useTranslations('navigation.footer')
+	const locale = useLocale();
+
   return (
     <Box sx={sxStyles.lowerFooter}>
       <Box sx={sxStyles.pptc}>
-        <Link href={'/privacy-policy'} className={styles['footerLinks']}>
-          Політика конфіденційності
+        <Link href={`/${locale}/privacy-policy`} className={styles['footerLinks']}>
+	        {t('privacy_policy')}
         </Link>
-        <Link href={'/privacy-policy'} className={styles['footerLinks']}>
-          Правила та умови
+        <Link href={`/${locale}/privacy-policy`} className={styles['footerLinks']}>
+	        {t('terms_and_conditions')}
         </Link>
       </Box>
       <Typography sx={sxStyles.copyright}>
@@ -21,4 +26,4 @@ const LowerFooter = () => {
   );
 };
 
-export default LowerFooter
+export default LowerFooter;
