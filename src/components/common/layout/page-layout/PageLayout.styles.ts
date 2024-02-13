@@ -9,6 +9,8 @@ export const headerIndent: SxProps<Theme> = {
 };
 
 export const pageContent: SxProps<Theme> = {
+	maxWidth: '2560px',
+	margin: '0 auto',
   minHeight: {
     mobile: '600px',
 	  desktop: '768px',
