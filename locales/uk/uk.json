@@ -111,7 +111,9 @@
       "subject_placeholder": "Напишіть тему",
       "message_input": "Повідомлення",
       "message_placeholder": "Напишіть ваше повідомлення",
-      "send_button": "Надіслати"
+      "send_button": "Надіслати",
+      "required": "Це обов'язкове поле",
+      "wrong_email": "Це не виглядає як email"
     }
   }
 }

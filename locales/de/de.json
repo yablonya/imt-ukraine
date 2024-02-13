@@ -111,7 +111,9 @@
       "subject_placeholder": "Einen Betreff schreiben",
       "message_input": "Nachricht",
       "message_placeholder": "Schreiben Sie Ihre Nachricht",
-      "send_button": "Senden Sie"
+      "send_button": "Senden Sie",
+      "required": "Erforderlich",
+      "wrong_email": "Es sieht nicht nach E-Mail aus"
     }
   }
 }

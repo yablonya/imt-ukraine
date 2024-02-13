@@ -111,7 +111,9 @@
       "subject_placeholder": "Write a subject",
       "message_input": "Message",
       "message_placeholder": "Write your message",
-      "send_button": "Send"
+      "send_button": "Send",
+      "required": "Required",
+      "wrong_email": "It doesn't look like email"
     }
   }
 }

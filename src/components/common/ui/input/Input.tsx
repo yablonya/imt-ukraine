@@ -5,6 +5,7 @@ import {FormControl, FormHelperText, InputLabel, OutlinedInput} from "@mui/mater
 import * as styles from './Input.styles'
 import {FormData} from '@/types/FormData';
 import {emailValidator} from "@/lib/utils/ValidateForm";
+import {useTranslations} from "next-intl";
 
 interface InputProps {
 	label: string,
@@ -35,6 +36,7 @@ const Input: FC<InputProps> = ({
 	...rest
 }) => {
 	const [emailError, setEmailError] = useState(false);
+	const t = useTranslations('pages.contact_us');
 
 	const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
 		const { name, value } = event.target;
@@ -73,10 +75,10 @@ const Input: FC<InputProps> = ({
 				{...rest}
 			/>
 			<FormHelperText sx={{display: isTouched && !value ? 'block' : 'none'}}>
-				Required
+				{t('required')}
 			</FormHelperText>
 			<FormHelperText sx={{display: emailError ? 'block' : 'none'}}>
-				{"It doesn't look like email"}
+				{t('wrong_email')}
 			</FormHelperText>
 		</FormControl>
 	);

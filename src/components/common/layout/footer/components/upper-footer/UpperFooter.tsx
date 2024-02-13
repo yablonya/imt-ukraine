@@ -25,16 +25,31 @@ const UpperFooter = () => {
 	          {t('contact_us')}
 					</Typography>
           <Box sx={sxStyles.footerList}>
-	          <Link href='tel:380970686901%20' sx={sxStyles.listLink}>
+	          <Link
+		          href='tel:380970686901%20'
+		          sx={sxStyles.listLink}
+		          target="_blank"
+		          rel="noreferrer"
+	          >
 		          +380 97 068 6901
 	          </Link>
-	          <Link href='mailto:info@invictusmedical.com.ua' sx={sxStyles.listLink}>
+	          <Link
+		          href='mailto:info@invictusmedical.com.ua'
+		          sx={sxStyles.listLink}
+		          target="_blank"
+		          rel="noreferrer"
+	          >
 		          info@invictusmedical.com.ua
 	          </Link>
 	          <Link href={`/${locale}/contact-us`} sx={sxStyles.listLink}>
 		          {t('send_message')}
 	          </Link>
-	          <Link href='https://maps.app.goo.gl/wA6pe6UL5N4j8TWa6' sx={sxStyles.listLink}>
+	          <Link
+		          href='https://maps.app.goo.gl/wA6pe6UL5N4j8TWa6'
+		          sx={sxStyles.listLink}
+		          target="_blank"
+		          rel="noreferrer"
+	          >
 		          {t('address')}
 	          </Link>
           </Box>
@@ -47,7 +62,13 @@ const UpperFooter = () => {
 					</Typography>
           <Box sx={sxStyles.footerList}>
             {socialNetworksLinks.map((item, index) => (
-	            <Link key={index} href={item.link} sx={sxStyles.listLink}>
+	            <Link
+		            key={index}
+		            href={item.link}
+		            sx={sxStyles.listLink}
+		            target="_blank"
+		            rel="noreferrer"
+	            >
 		            <Box sx={sxStyles.socialNetIcon}>{item.icon}</Box>
 		            <Typography sx={sxStyles.socialNetLinkText}>
 			            {item.text}

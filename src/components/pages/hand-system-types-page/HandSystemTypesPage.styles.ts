@@ -53,7 +53,7 @@ export const imageBlockTitle = (checked: boolean): SxProps<Theme> => ({
 	}),
 	m: {
 		mobile: 0,
-		desktopSemiMedium: '80px 0 13px',
+		desktopSemiMedium: '50px 0 13px',
 	},
 	typography: {
 		mobile: 'h3',

@@ -111,7 +111,9 @@
       "subject_placeholder": "Écrire un sujet",
       "message_input": "Message",
       "message_placeholder": "Ecrivez votre message",
-      "send_button": "Envoyer"
+      "send_button": "Envoyer",
+      "required": "Exigée",
+      "wrong_email": "Il ne s'agit pas d'un courrier électronique"
     }
   }
 }
