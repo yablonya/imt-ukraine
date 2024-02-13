@@ -1,4 +1,5 @@
 import {SxProps, Theme} from "@mui/system";
+import theme from "@/styles/theme/theme";
 
 export const tabStyles = (currentTab: string, tab: string): SxProps<Theme> => ({
   display: 'flex',
@@ -6,7 +7,7 @@ export const tabStyles = (currentTab: string, tab: string): SxProps<Theme> => ({
   gap: '10px',
   padding: '6px 10px',
   borderRadius: '6px',
-  backgroundColor: currentTab === tab ? 'rgba(61, 131, 97, 0.35)' : 'transparent',
+  backgroundColor: currentTab === tab ? theme.palette.blue[800] : 'transparent',
   '&:hover': {
     backgroundColor: 'rgba(0, 0, 0, 0.13)',
   },

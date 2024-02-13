@@ -96,7 +96,7 @@ const HandTypeFoldingBlock: FC<HandTypeFoldingBlockProps> = ({
 					setOpenedBlock({...rest, blockLabel: ''})
 				}}
 			>
-				<XMarkIcon style={{width: '35px', color: '#3D8361'}}/>
+				<XMarkIcon style={{width: '35px', color: '#1976D2'}}/>
 			</Box>
 			<Accordion
 				ref={blockRef}

@@ -1,4 +1,6 @@
 import '@/styles/global-styles.scss';
+import theme from "@/styles/theme/theme";
+import {ThemeProvider} from "@mui/system";
 
 export default function RootLayout({
   children,
@@ -8,7 +10,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
     <body>
-    {children}
+    <ThemeProvider theme={theme}>
+	    {children}
+    </ThemeProvider>
     </body>
     </html>
   );

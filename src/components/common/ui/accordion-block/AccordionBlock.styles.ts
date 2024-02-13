@@ -1,14 +1,15 @@
 import {SxProps, Theme} from "@mui/system";
+import theme from "@/styles/theme/theme";
 
 export const accordionBlock: SxProps<Theme> = {
 	borderRadius: '15px !important',
 	overflow: 'hidden',
-	backgroundColor: 'rgba(61, 131, 97, 0.2)',
+	backgroundColor: theme.palette.blue[900],
 };
 
 export const accordionHeader: SxProps<Theme> = {
-	backgroundColor: '#3D8361',
-	color: 'white',
+	backgroundColor: theme.palette.blue[200],
+	color: 'white.main',
 	minHeight: '64px',
 	borderRadius: '15px',
 	overflow: 'hidden',

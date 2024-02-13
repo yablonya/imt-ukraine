@@ -6,7 +6,7 @@ export const headerContainer: SxProps<Theme> = {
 		desktopSemiMedium: 'none'
 	},
   boxShadow: 'none',
-  backgroundColor: 'white',
+  backgroundColor: 'white.main',
   color: 'black',
   borderBottom: '1px solid black',
   padding: '12px 20px',

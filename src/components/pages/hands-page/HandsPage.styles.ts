@@ -43,7 +43,7 @@ export const systemTypes = (checked: boolean): SxProps<Theme> => ({
 		desktopSemiMedium: '70px',
 	},
 	color: {
-		mobile: 'white',
+		mobile: 'white.main',
 		desktopSemiMedium: 'black',
 	},
 	height: '100%',
@@ -82,7 +82,7 @@ export const systemTypesText: SxProps<Theme> = {
 
 export const learnMoreLink: SxProps<Theme> = {
 	width: 'fit-content',
-	textDecoration: 'underline #1C6758',
+	textDecoration: 'underline #1565C0',
 	textUnderlineOffset: '7px',
 	cursor: 'pointer',
 	'&:hover': {
@@ -103,7 +103,7 @@ export const addOnsBlock: SxProps<Theme> = {
 		desktopSemiMedium: '0 50px 60px 70px',
 	},
 	display: 'flex',
-	justifyContent: 'space-between',
+	justifyContent: 'space-around',
 	alignItems: 'center',
 	gap: {
 		mobile: '130px',

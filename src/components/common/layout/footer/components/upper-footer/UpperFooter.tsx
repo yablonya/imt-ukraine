@@ -1,3 +1,5 @@
+'use client';
+
 import {Box, Link, Typography} from "@mui/material";
 import {socialNetworksLinks} from "@/components/common/layout/footer/components/upper-footer/constants";
 import Image from 'next/image';

@@ -1,4 +1,5 @@
 import {SxProps, Theme} from "@mui/system";
+import theme from "@/styles/theme/theme";
 
 export const firstBlock: SxProps<Theme> = {
   display: 'flex',
@@ -9,7 +10,7 @@ export const firstBlock: SxProps<Theme> = {
   },
   backgroundColor: {
     mobile: 'transparent',
-    desktopSemiMedium: '#3D8361',
+    desktopSemiMedium: theme.palette.blue[800],
   },
   flexDirection: {
     mobile: 'column',
@@ -25,7 +26,7 @@ export const textContainer: SxProps<Theme> = {
   },
   color: {
     mobile: 'black',
-    desktopSemiMedium: 'white',
+    desktopSemiMedium: theme.palette.grey[50],
   },
 }
 export const textPartHeader: SxProps<Theme> = {

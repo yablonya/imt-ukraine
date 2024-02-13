@@ -1,9 +1,11 @@
 import {SxProps, Theme} from "@mui/system";
+import theme from "@/styles/theme/theme";
 
 export const link: SxProps<Theme> = {
-	border: '1px solid #3D8361',
+	border: '1px solid',
+	borderColor: theme.palette.blue[200],
 	borderRadius: '15px',
-	color: '#3D8361',
+	color: theme.palette.blue[100],
 	display: 'flex',
 	justifyContent: 'center',
 	alignItems: 'center',
@@ -30,8 +32,8 @@ export const link: SxProps<Theme> = {
 	},
 
 	'&:hover': {
-		color: 'white',
-		backgroundColor: '#3D8361',
+		color: 'white.main',
+		backgroundColor: theme.palette.blue[200],
 		'& .MuiTypography-root:first-of-type': {
 			display: 'none',
 			opacity: 0,
@@ -70,7 +72,6 @@ export const linkText: SxProps<Theme> = {
 }
 
 export const linkHoverText: SxProps<Theme> = {
-	// mt: '2px',
 	textAlign: 'center',
 	display: 'none',
 	opacity: 0,

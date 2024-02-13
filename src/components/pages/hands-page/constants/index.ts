@@ -7,20 +7,20 @@ export const addOnsDescriptions = [
 		image: addOn1,
 		title: 'first_add_on_title',
 		text: 'first_add_on_text',
-		cardColor: '#3D8361'
+		cardColor: '#1976D2'
 	},
 
 	{
 		image: addOn2,
 		title: 'second_add_on_title',
 		text: 'second_add_on_text',
-		cardColor: '#D6CDA4'
+		cardColor: 'rgba(214, 205, 164, 0.4)'
 	},
 
 	{
 		image: addOn3,
 		title: 'third_add_on_title',
 		text: 'third_add_on_text',
-		cardColor: '#3D8361'
+		cardColor: '#1976D2'
 	},
 ]

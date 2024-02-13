@@ -5,7 +5,7 @@ export const closingBlock: SxProps<Theme> = {
 	cursor: 'pointer',
 	width: '245px',
 	height: '75px',
-	border: '2px solid #3D8361',
+	border: '2px solid #1976D2',
 	borderRadius: '15px',
 	display: 'flex',
 	alignItems: 'center',
@@ -27,10 +27,10 @@ export const accordeonBlock = (
 	left: isDropped ? '0px' : `${leftDistance - 50}px`,
 	width: isDropped ? '100%' : '245px',
 	mt: isOpen ? '65px' : '-75px',
-	backgroundColor: '#3D8361',
+	backgroundColor: theme.palette.blue[200],
 	borderRadius: '15px !important',
 	overflow: 'hidden',
-	color: 'white',
+	color: 'white.main',
 });
 
 
@@ -49,7 +49,7 @@ export const accordeonTitle = (isOpen: boolean, isDropped: boolean): SxProps<The
 		content: '""',
 		height: '1px',
 		flexGrow: 10,
-		backgroundColor: 'white',
+		backgroundColor: 'white.main',
 	},
 });
 

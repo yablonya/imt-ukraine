@@ -29,24 +29,21 @@ export const handsArtText: SxProps<Theme> = {
 		mobile: 'center',
 		desktop: 'left'
 	},
-
 	padding: {
 		mobile: '18px 25px',
 		mobileSemiMedium: '24px 25px',
 		desktop: '45px 110px',
 		desktopSemiLarge: '60px 150px'
 	},
-
 	typography: {
 		mobile: 'h5',
 		mobileMedium: 'h4',
 		desktop: 'h1'
 	},
-
 	position: 'absolute',
 	bottom: 0,
 	width: '100%',
-	color: 'white',
+	color: 'white.main',
 }
 
 export const linksBlock: SxProps<Theme> = {

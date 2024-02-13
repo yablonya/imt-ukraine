@@ -35,6 +35,7 @@ const HandsPage = () => {
 					</Link>
 				</Box>
 			</Box>
+
 			<Box sx={sxStyles.addOnsBlock}>
 				<Box>
 					<Typography variant='h2' sx={sxStyles.addOnsHeader}>

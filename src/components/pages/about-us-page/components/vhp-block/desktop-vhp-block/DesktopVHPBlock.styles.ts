@@ -28,7 +28,7 @@ export const vhpBlock = (checked: boolean): SxProps<Theme> => ({
 
 export const vhpContent: SxProps<Theme> = {
   position: 'absolute',
-  color: 'white',
+  color: 'white.main',
   width: '100%',
 };
 

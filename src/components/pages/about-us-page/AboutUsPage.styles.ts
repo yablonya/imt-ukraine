@@ -8,9 +8,9 @@ export const technologyBlock: SxProps<Theme> = {
 		tablet: 'row',
 	},
 	backgroundColor: {
-		mobile: 'rgba(214, 205, 164, 0.5)',
+		mobile: 'rgba(214, 205, 164, 0.3)',
 		tablet: 'transparent',
-		desktop: 'rgba(214, 205, 164, 0.5)',
+		desktop: 'rgba(214, 205, 164, 0.3)',
 	},
 	margin: {
 		mobile: '0 25px 50px',

@@ -7,7 +7,7 @@ export const imageBlock = (checked: boolean): SxProps<Theme> => ({
 	alignItems: 'center',
 	position: 'relative',
 	color: {
-		mobile: 'white',
+		mobile: 'white.main',
 		desktopSemiMedium: 'black',
 	},
 	'&::before': {

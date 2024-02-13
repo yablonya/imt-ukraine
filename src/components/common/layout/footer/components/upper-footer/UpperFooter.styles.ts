@@ -1,8 +1,8 @@
 import {SxProps, Theme} from "@mui/system";
+import theme from "@/styles/theme/theme";
 
 export const upperFooter: SxProps<Theme> = {
-  color: 'white',
-  backgroundColor: '#1C6758',
+  backgroundColor: theme.palette.blue[600],
   padding: {
     mobile: '23px 25px 25px',
     desktop: '43px 25px 45px',
@@ -35,6 +35,7 @@ export const footerLists: SxProps<Theme> = {
 }
 
 export const footerListHeader: SxProps<Theme> = {
+	color: theme.palette.grey[50],
   fontSize: {
     mobile: '15px',
     desktop: '18px',
@@ -59,7 +60,7 @@ export const footerList: SxProps<Theme> = {
 }
 
 export const listLink: SxProps<Theme> = {
-	color: 'white',
+	color: theme.palette.grey[50],
 	display: 'flex',
 	alignItems: 'center',
 	gap: '8px',

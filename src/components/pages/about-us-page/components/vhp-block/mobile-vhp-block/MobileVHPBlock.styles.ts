@@ -25,7 +25,7 @@ export const vhpImageBlock = (checked: boolean): SxProps<Theme> => ({
 
 export const vhpHeader: SxProps<Theme> = {
   position: 'absolute',
-  color: 'white',
+  color: 'white.main',
   width: '100%',
   padding: '0 25px',
   textAlign: {

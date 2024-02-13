@@ -1,9 +1,9 @@
 import {SxProps, Theme} from "@mui/system";
+import theme from "@/styles/theme/theme";
 
 export const lowerFooter: SxProps<Theme> = {
-  color: 'white',
   borderTop: '1px solid white',
-  backgroundColor: '#1C6758',
+  backgroundColor: theme.palette.blue[600],
   padding: {
     mobile: '13px 25px 15px',
     desktop: '16px 25px 18px',

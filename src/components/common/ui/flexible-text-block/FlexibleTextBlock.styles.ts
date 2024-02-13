@@ -19,7 +19,7 @@ export const whiteOverlay = (isOpen: boolean): SxProps<Theme> => ({
 
 export const readMoreButton: SxProps<Theme> = {
   width: 'fit-content',
-  textDecoration: 'underline 1px solid #1C6758',
+  textDecoration: 'underline 1px solid #1E88E5',
   textUnderlineOffset: '5px',
   marginTop: '20px',
   cursor: 'pointer',

@@ -8,6 +8,7 @@ export const addOnCard = (cardColor: string): SxProps<Theme> => ({
 	width: {
 		mobile: '100%',
 		desktopSemiMedium: '625px',
+		desktopLarge: '850px',
 	},
 	display: 'flex',
 	alignItems: 'center',
@@ -17,7 +18,7 @@ export const addOnCard = (cardColor: string): SxProps<Theme> => ({
 	},
 	borderRadius: '15px',
 	backgroundColor: cardColor,
-	color: cardColor === '#3D8361' ? 'white' : 'black',
+	color: cardColor === '#1976D2' ? 'white.main' : 'black',
 	flexDirection: {
 		mobile: 'column',
 		tablet: 'row'
