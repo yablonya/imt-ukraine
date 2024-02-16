@@ -12,7 +12,6 @@ import * as sxStyles from './MobileVHPBlock.styles';
 import styles from '../../../AboutUsPage.module.scss';
 
 const MobileVHPBlock = () => {
-	const checked = useDelay(800);
 	const t = useTranslations('pages.about_us.vhp');
 
   return (
@@ -24,13 +23,13 @@ const MobileVHPBlock = () => {
 				}
 	    }}
     >
-      <Box sx={sxStyles.vhpImageBlock(checked)}>
-        <Image src={countries} alt={'Countries image'} className={styles.countriesImg}/>
-        <Fade in={checked} timeout={600}>
-	        <Typography variant='h2' sx={sxStyles.vhpHeader}>
-		        Victoria Hand Project
-	        </Typography>
-        </Fade>
+      <Box sx={sxStyles.vhpImageBlock}>
+	      <Image src={countries} alt={'Countries image'} className={styles.countriesImg}/>
+	      <Fade in={true} timeout={600}>
+		      <Typography variant='h2' sx={sxStyles.vhpHeader}>
+			      Victoria Hand Project
+		      </Typography>
+	      </Fade>
       </Box>
       <FlexibleTextBlock sx={sxStyles.vhpText}>
 	      {t('before_list')}

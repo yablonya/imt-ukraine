@@ -28,7 +28,7 @@ const HandsPage = () => {
 					<Typography variant='h5' sx={sxStyles.systemTypesText}>
 						{t('hand_types')}
 					</Typography>
-					<Link href={`/${locale}/hands/hand-system-types`}>
+					<Link href={`/${locale}/hands/hand-system-types`} style={{width: 'fit-content'}}>
 						<Typography variant='h5' sx={sxStyles.learnMoreLink}>
 							{t('hand_types_link')}
 						</Typography>

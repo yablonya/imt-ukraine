@@ -24,7 +24,7 @@ export const systemTypesBlock = (checked: boolean): SxProps<Theme> => ({
 		zIndex: '0',
 		top: '0',
 		left: '0',
-		opacity: checked ? 0.85 : 0,
+		opacity: checked ? 0.7 : 0,
 		height: '100%',
 		width: '100%',
 	}

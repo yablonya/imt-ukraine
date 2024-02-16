@@ -6,45 +6,15 @@ export const imageBlock = (checked: boolean): SxProps<Theme> => ({
 	flexDirection: 'column',
 	alignItems: 'center',
 	position: 'relative',
-	color: {
-		mobile: 'white.main',
-		desktopSemiMedium: 'black',
-	},
-	'&::before': {
-		transition: theme.transitions.create(['opacity'], {
-			duration: theme.transitions.duration.standard,
-		}),
-		display: {
-			mobile: 'block',
-			desktopSemiMedium: 'none',
-		},
-		content: '""',
-		background: 'black',
-		position: 'absolute',
-		zIndex: '0',
-		top: '0',
-		left: '0',
-		height: '100%',
-		width: '100%',
-		opacity: checked ? 0.85 : 0,
-	}
+	color: 'black',
 });
 
 export const imageBlockText: SxProps<Theme> = {
-	textAlign: {
-		mobile: 'left',
-		tablet: 'center',
-	},
-	position: {
-		mobile: 'absolute',
-		desktopSemiMedium: 'relative',
-	},
+	textAlign: 'center',
 	display: 'flex',
 	flexDirection: 'column',
-	justifyContent: 'center',
-	left: '25px',
-	right: '25px',
-	height: '100%',
+	justifyContent: 'flex-start',
+	padding: '40px 25px 0'
 }
 
 export const imageBlockTitle = (checked: boolean): SxProps<Theme> => ({
@@ -53,10 +23,11 @@ export const imageBlockTitle = (checked: boolean): SxProps<Theme> => ({
 	}),
 	m: {
 		mobile: 0,
-		desktopSemiMedium: '50px 0 13px',
+		desktopSemiMedium: '30px 0 13px',
 	},
 	typography: {
-		mobile: 'h3',
+		mobile: 'h4',
+		tablet: 'h2',
 		desktopSemiMedium: 'h1',
 	},
 	opacity: {
@@ -66,7 +37,7 @@ export const imageBlockTitle = (checked: boolean): SxProps<Theme> => ({
 });
 
 export const imageBlockSubtitle: SxProps<Theme> = {
-	mb: '16px',
+	mb: '40px',
 
 	display: {
 		mobile: 'none',

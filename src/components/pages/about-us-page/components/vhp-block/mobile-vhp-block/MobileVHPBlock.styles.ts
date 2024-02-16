@@ -1,42 +1,30 @@
 import {SxProps, Theme} from "@mui/system";
 import theme from "@/styles/theme/theme";
 
-export const vhpImageBlock = (checked: boolean): SxProps<Theme> => ({
+export const vhpImageBlock: SxProps<Theme> = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  padding: '20px 10px',
-  position: 'relative',
-  '&::before': {
-	  transition: theme.transitions.create(['opacity'], {
-		  duration: theme.transitions.duration.standard,
-	  }),
-    content: '""',
-    background: 'black',
-    position: 'absolute',
-    zIndex: '0',
-    top: '0',
-    left: '0',
-    opacity: checked ? 0.85 : 0,
-    height: '100%',
-    width: '100%',
-  }
-});
+	flexDirection: 'column',
+  padding: '20px 25px 0',
+	gap: '40px'
+};
 
 export const vhpHeader: SxProps<Theme> = {
-  position: 'absolute',
-  color: 'white.main',
   width: '100%',
-  padding: '0 25px',
   textAlign: {
     mobile: 'left',
     tablet: 'center',
-  }
+  },
+	typography: {
+		mobile: 'h3',
+		tablet: 'h2',
+	}
 };
 
 export const vhpText: SxProps<Theme> = {
   typography: 'body1',
-  padding: '30px 25px 50px',
+  padding: '20px 25px 50px',
 };
 
 export const listItemIcon: SxProps<Theme> = {
