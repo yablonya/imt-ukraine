@@ -1,6 +1,6 @@
 import {Box, Typography} from "@mui/material";
 import Image from "next/image";
-import services from "../../../../public/images/services.png";
+import services from "../../../../public/images/services.jpg";
 import {useTranslations} from "next-intl";
 
 import * as sxStyles from './ServicesPage.styles';
