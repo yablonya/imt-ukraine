@@ -15,7 +15,7 @@
     "footer": {
       "contact_us": "Contact us",
       "send_message": "Send us a message",
-      "address": "23 Stepana Bandera Avenue, Kyiv, Ukraine, 04073, room 202",
+      "address": "23 Stepan Bandera Avenue, Kyiv, Ukraine, 04073, room 202",
       "social_networks": "Our social networks",
       "privacy_policy": "Політика конфіденційності",
       "terms_and_conditions": "Privacy policy"
@@ -102,7 +102,7 @@
       "email_link": "Write to us",
       "email": "info@invictusmedical.com.ua",
       "address_link": "Our location",
-      "address": "23 Stepana Bandera Avenue, Kyiv, Ukraine, 04073, room 202",
+      "address": "23 Stepan Bandera Avenue, Kyiv, Ukraine, 04073, room 202",
       "message_title": "Leave your message here",
       "name_input": "Name",
       "name_placeholder": "Write your name",
@@ -114,6 +114,25 @@
       "send_button": "Send",
       "required": "Required",
       "wrong_email": "It doesn't look like email"
+    },
+    "privacy_policy": {
+      "first_title": "Who we are",
+      "first_text": "Our website address",
+      "second_title": "Comments",
+      "second_text": "When visitors leave comments on the site, we collect the data displayed in the comment form, as well as the visitor's IP address and browser user agent string to help detect spam.\n\nAn anonymous string created from your email address (also called a hash) may be provided to the Gravatar service to verify that you are using it. Gravatar's privacy policy is available here: https://automattic.com/privacy/. Once your comment has been approved, your profile picture will be made available to everyone in the context of your comment.",
+      "third_title": "MEDIA",
+      "third_text": "If you upload images to a website, you should avoid uploading images with embedded location data (EXIF GPS). Website visitors can download and retrieve any location data from images on the website.",
+      "fourth_text": "If you leave a comment on our website, you can allow your name, email address and website to be stored in cookies. This is for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.\n\nIf you visit our login page, we will set a temporary cookie to determine if your browser supports cookies. This cookie does not contain any personal data and is deleted when you close your browser.\n\nWhen you log in, we also set several cookies to save your registration information and your screen display choices. The login cookies are stored for two days and the screen preference cookies for one year. If you select \"Remember Me\", your login information will be stored for two weeks. If you log out of your account, your login cookies will be deleted.\n\nIf you edit or publish an article, an additional cookie will be stored in your browser. This cookie does not contain any personal data and simply indicates the publication ID of the article you have just edited. It expires after 1 day.",
+      "fifth_title": "Embedded content from other websites",
+      "fifth_text": "Articles on this site may contain embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in exactly the same way as if the visitor had visited the other website.\n\nThose websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.",
+      "sixth_title": "Who we share your data with",
+      "sixth_text": "If you request a password reset, your IP address will be included in the reset email.",
+      "seventh_title": "How long we keep your data",
+      "seventh_text": "If you leave a comment, the comment and its metadata are stored indefinitely. This is so that we can automatically recognise and approve any subsequent comments, rather than holding them in a moderation queue.\n\nFor users who register on our website (if any), we also store the personal information they provide in their user profile. All users can view, edit or delete their personal information at any time (except that they cannot change their username). Website administrators can also view and edit this information.",
+      "eighth_title": "What rights you have over your data",
+      "eighth_text": "If you have an account on this site or have left comments, you may request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You may also request that we delete any personal data we hold about you. This does not include any data we are required to keep for administrative, legal or security purposes.",
+      "ninth_title": "Where we send your data",
+      "ninth_text": "Visitor comments may be checked by an automatic spam detection service."
     }
   }
 }

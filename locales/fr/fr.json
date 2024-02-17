@@ -15,7 +15,7 @@
     "footer": {
       "contact_us": "Contactez nous",
       "send_message": "Envoyer un message",
-      "address": "23, Stepanera Avenue, Kyiv, 04073, Ukraine, bureau 202",
+      "address": "23, Avenue Stepan Bandera, Kyiv, 04073, Ukraine, bureau 202",
       "social_networks": "Nos réseaux sociaux",
       "privacy_policy": "Politique de confidentialité",
       "terms_and_conditions": "Conditions d'utilisation"
@@ -102,7 +102,7 @@
       "email_link": "Nous écrire",
       "email": "info@invictusmedical.com.ua",
       "address_link": "Notre emplacement",
-      "address": "23, Stepanera Avenue, Kyiv, 04073, Ukraine, bureau 202",
+      "address": "23, Avenue Stepan Bandera, Kyiv, 04073, Ukraine, bureau 202",
       "message_title": "Laissez votre message ici",
       "name_input": "Nom et prénom",
       "name_placeholder": "Ecrivez votre nom",
@@ -114,6 +114,25 @@
       "send_button": "Envoyer",
       "required": "Exigée",
       "wrong_email": "Il ne s'agit pas d'un courrier électronique"
+    },
+    "privacy_policy": {
+      "first_title": "Qui sommes-nous",
+      "first_text": "L'adresse de notre site web",
+      "second_title": "Commentaires",
+      "second_text": "Lorsque des visiteurs laissent des commentaires sur le site, nous recueillons les données affichées dans le formulaire de commentaire, ainsi que l'adresse IP du visiteur et la chaîne de l'agent utilisateur du navigateur pour aider à détecter les spams.\n\nUne chaîne anonyme créée à partir de votre adresse électronique (également appelée \"hash\") peut être fournie au service Gravatar pour vérifier que vous l'utilisez. La politique de confidentialité de Gravatar est disponible ici : https://automattic.com/privacy/. Une fois votre commentaire approuvé, votre photo de profil sera accessible à tous dans le contexte de votre commentaire.",
+      "third_title": "MEDIA",
+      "third_text": "Si vous téléchargez des images sur un site web, vous devez éviter de télécharger des images contenant des données de localisation (EXIF GPS). Les visiteurs du site web peuvent télécharger et récupérer toutes les données de localisation des images sur le site web.",
+      "fourth_text": "Si vous laissez un commentaire sur notre site web, vous pouvez autoriser l'enregistrement de votre nom, de votre adresse électronique et de votre site web dans des cookies. Cela vous permet de ne pas avoir à remplir à nouveau vos coordonnées lorsque vous laissez un autre commentaire. Ces cookies ont une durée de vie d'un an.\n\nSi vous visitez notre page de connexion, nous installerons un cookie temporaire pour déterminer si votre navigateur prend en charge les cookies. Ce cookie ne contient aucune donnée personnelle et est supprimé lorsque vous fermez votre navigateur.\n\nLorsque vous vous connectez, nous installons également plusieurs cookies pour sauvegarder vos informations d'enregistrement et vos choix d'affichage à l'écran. Les cookies de connexion sont stockés pendant deux jours et les cookies de préférence d'écran pendant un an. Si vous sélectionnez \"Se souvenir de moi\", vos informations de connexion seront stockées pendant deux semaines. Si vous vous déconnectez de votre compte, vos cookies de connexion seront supprimés.\n\nSi vous modifiez ou publiez un article, un cookie supplémentaire sera stocké dans votre navigateur. Ce cookie ne contient aucune donnée personnelle et indique simplement l'identifiant de publication de l'article que vous venez de modifier. Il expire au bout d'un jour.",
+      "fifth_title": "Contenu intégré d'autres sites web",
+      "fifth_text": "Les articles de ce site peuvent contenir du contenu intégré (par exemple des vidéos, des images, des articles, etc.). Le contenu intégré provenant d'autres sites web se comporte exactement de la même manière que si le visiteur s'était rendu sur l'autre site web.\n\nCes sites web peuvent collecter des données vous concernant, utiliser des cookies, intégrer un suivi supplémentaire par des tiers et surveiller votre interaction avec ce contenu intégré, y compris votre interaction avec le contenu intégré si vous avez un compte et que vous êtes connecté à ce site web.",
+      "sixth_title": "Avec qui partageons-nous vos données",
+      "sixth_text": "Si vous demandez une réinitialisation de votre mot de passe, votre adresse IP sera incluse dans l'e-mail de réinitialisation.",
+      "seventh_title": "Durée de conservation des données",
+      "seventh_text": "Si vous laissez un commentaire, celui-ci et ses métadonnées sont conservés indéfiniment. Cela nous permet de reconnaître et d'approuver automatiquement tout commentaire ultérieur, plutôt que de les conserver dans une file d'attente de modération.\n\nPour les utilisateurs qui s'inscrivent sur notre site web (le cas échéant), nous stockons également les informations personnelles qu'ils fournissent dans leur profil d'utilisateur. Tous les utilisateurs peuvent consulter, modifier ou supprimer leurs informations personnelles à tout moment (sauf qu'ils ne peuvent pas changer leur nom d'utilisateur). Les administrateurs du site web peuvent également consulter et modifier ces informations.",
+      "eighth_title": "Quels sont vos droits sur vos données",
+      "eighth_text": "Si vous avez un compte sur ce site ou si vous avez laissé des commentaires, vous pouvez demander à recevoir un fichier exporté des données personnelles que nous détenons à votre sujet, y compris toutes les données que vous nous avez fournies. Vous pouvez également nous demander de supprimer toutes les données personnelles que nous détenons à votre sujet. Cela n'inclut pas les données que nous sommes tenus de conserver à des fins administratives, juridiques ou de sécurité.",
+      "ninth_title": "Où envoyons-nous vos données",
+      "ninth_text": "Les commentaires des visiteurs peuvent être vérifiés par un service de détection automatique des spams."
     }
   }
 }

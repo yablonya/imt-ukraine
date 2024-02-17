@@ -15,7 +15,7 @@
     "footer": {
       "contact_us": "Kontakt",
       "send_message": "Senden Sie uns eine Nachricht",
-      "address": "23, Stepanera Avenue, Kiew, 04073, Ukraine, Raum 202",
+      "address": "23, Stepan Bandera Avenue, Kiew, 04073, Ukraine, Raum 202",
       "social_networks": "Unsere sozialen Netzwerke",
       "privacy_policy": "Datenschutzbestimmungen",
       "terms_and_conditions": "Bedingungen und Konditionen"
@@ -102,7 +102,7 @@
       "email_link": "Schreiben Sie uns",
       "email": "info@invictusmedical.com.ua",
       "address_link": "Unser Standort",
-      "address": "23, Stepanera Avenue, Kiew, 04073, Ukraine, Raum 202",
+      "address": "23, Stepan Bandera Avenue, Kiew, 04073, Ukraine, Raum 202",
       "message_title": "Hinterlassen Sie hier Ihre Nachricht",
       "name_input": "Name",
       "name_placeholder": "Schreiben Sie Ihren Namen",
@@ -114,6 +114,25 @@
       "send_button": "Senden Sie",
       "required": "Erforderlich",
       "wrong_email": "Es sieht nicht nach E-Mail aus"
+    },
+    "privacy_policy": {
+      "first_title": "Wer wir sind",
+      "first_text": "Unsere Website-Adresse",
+      "second_title": "Kommentare",
+      "second_text": "Wenn Besucher Kommentare auf der Website hinterlassen, sammeln wir die Daten, die im Kommentarformular angezeigt werden, sowie die IP-Adresse des Besuchers und die Zeichenfolge des Browser-Benutzers, um Spam zu erkennen.\n\nEine anonyme Zeichenkette, die aus Ihrer E-Mail-Adresse erstellt wird (auch Hash genannt), kann dem Gravatar-Dienst zur Verfügung gestellt werden, um zu überprüfen, ob Sie ihn benutzen. Die Datenschutzrichtlinien von Gravatar finden Sie hier: https://automattic.com/privacy/. Sobald Ihr Kommentar genehmigt wurde, wird Ihr Profilbild im Zusammenhang mit Ihrem Kommentar für alle zugänglich gemacht.",
+      "third_title": "MEDIEN",
+      "third_text": "Wenn Sie Bilder auf eine Website hochladen, sollten Sie das Hochladen von Bildern mit eingebetteten Standortdaten (EXIF-GPS) vermeiden. Website-Besucher können alle Standortdaten von Bildern auf der Website herunterladen und abrufen.",
+      "fourth_text": "Wenn Sie einen Kommentar auf unserer Website hinterlassen, können Sie zulassen, dass Ihr Name, Ihre E-Mail-Adresse und Ihre Website in Cookies gespeichert werden. Dies dient Ihrer Bequemlichkeit, damit Sie Ihre Daten nicht erneut eingeben müssen, wenn Sie einen weiteren Kommentar hinterlassen. Diese Cookies bleiben ein Jahr lang gespeichert.\n\nWenn Sie unsere Anmeldeseite besuchen, setzen wir ein temporäres Cookie, um festzustellen, ob Ihr Browser Cookies unterstützt. Dieses Cookie enthält keine persönlichen Daten und wird gelöscht, wenn Sie Ihren Browser schließen.\n\nWenn Sie sich anmelden, setzen wir außerdem mehrere Cookies, um Ihre Anmeldeinformationen und Ihre Auswahl der Bildschirmdarstellung zu speichern. Die Anmelde-Cookies werden zwei Tage lang gespeichert, die Cookies für die Bildschirmeinstellungen ein Jahr lang. Wenn Sie \"Remember Me\" wählen, werden Ihre Anmeldeinformationen zwei Wochen lang gespeichert. Wenn Sie sich von Ihrem Konto abmelden, werden Ihre Anmelde-Cookies gelöscht.\n\nWenn Sie einen Artikel bearbeiten oder veröffentlichen, wird ein weiteres Cookie in Ihrem Browser gespeichert. Dieses Cookie enthält keine persönlichen Daten und zeigt lediglich die Veröffentlichungs-ID des Artikels an, den Sie gerade bearbeitet haben. Er verfällt nach 1 Tag.",
+      "fifth_title": "Eingebettete Inhalte von anderen Websites",
+      "fifth_text": "Die Artikel auf dieser Website können eingebettete Inhalte enthalten (z. B. Videos, Bilder, Artikel usw.). Eingebettete Inhalte von anderen Websites verhalten sich genau so, als ob der Besucher die andere Website besucht hätte.\n\nDiese Websites können Daten über Sie sammeln, Cookies verwenden, zusätzliche Verfolgungen durch Dritte einbetten und Ihre Interaktion mit diesem eingebetteten Inhalt überwachen, einschließlich der Verfolgung Ihrer Interaktion mit dem eingebetteten Inhalt, wenn Sie ein Konto haben und auf dieser Website angemeldet sind.",
+      "sixth_title": "Mit wem wir Ihre Daten teilen",
+      "sixth_text": "Wenn Sie die Zurücksetzung eines Passworts beantragen, wird Ihre IP-Adresse in der E-Mail zur Zurücksetzung enthalten sein.",
+      "seventh_title": "Wie lange wir Ihre Daten aufbewahren",
+      "seventh_text": "Wenn Sie einen Kommentar hinterlassen, werden der Kommentar und seine Metadaten auf unbestimmte Zeit gespeichert. Auf diese Weise können wir nachfolgende Kommentare automatisch erkennen und genehmigen, anstatt sie in einer Moderationswarteschlange zu halten.\n\nBei Nutzern, die sich auf unserer Website registrieren (falls vorhanden), speichern wir auch die persönlichen Daten, die sie in ihrem Nutzerprofil angeben. Alle Nutzer können ihre persönlichen Daten jederzeit einsehen, bearbeiten oder löschen (mit der Ausnahme, dass sie ihren Benutzernamen nicht ändern können). Auch die Administratoren der Website können diese Daten einsehen und bearbeiten.",
+      "eighth_title": "Welche Rechte Sie über Ihre Daten haben",
+      "eighth_text": "Wenn Sie ein Konto auf dieser Website haben oder Kommentare hinterlassen haben, können Sie eine exportierte Datei mit den personenbezogenen Daten anfordern, die wir über Sie gespeichert haben, einschließlich aller Daten, die Sie uns zur Verfügung gestellt haben. Sie können auch verlangen, dass wir alle personenbezogenen Daten, die wir über Sie gespeichert haben, löschen. Davon ausgenommen sind Daten, die wir aus verwaltungstechnischen, rechtlichen oder sicherheitsrelevanten Gründen aufbewahren müssen.",
+      "ninth_title": "Wohin wir Ihre Daten übermitteln",
+      "ninth_text": "Besucherkommentare können von einem automatischen Spam-Erkennungsdienst überprüft werden."
     }
   }
 }

@@ -18,6 +18,7 @@ export const title: SxProps<Theme> = {
 }
 
 export const text: SxProps<Theme> = {
+	whiteSpace: 'pre-line',
 	typography: {
 		mobile: 'body2',
 		desktopSemiMedium: 'body1',
