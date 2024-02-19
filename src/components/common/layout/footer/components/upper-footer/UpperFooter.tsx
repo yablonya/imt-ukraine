@@ -26,12 +26,12 @@ const UpperFooter = () => {
 					</Typography>
           <Box sx={sxStyles.footerList}>
 	          <Link
-		          href='tel:380970686901%20'
+		          href='tel:380970626901%20'
 		          sx={sxStyles.listLink}
 		          target="_blank"
 		          rel="noreferrer"
 	          >
-		          +380 97 068 6901
+		          +380 97 062 6901
 	          </Link>
 	          <Link
 		          href='mailto:info@invictusmedical.com.ua'

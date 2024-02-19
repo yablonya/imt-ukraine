@@ -5,7 +5,7 @@ export const contactLinks = [
 		icon: <PhoneIcon strokeWidth={1}/>,
 		title: 'phone_link',
 		message: 'phone',
-		href: 'tel:380970686901%20',
+		href: 'tel:380970626901%20',
 	},
 
 	{
